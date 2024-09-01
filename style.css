@@ -1,0 +1,32 @@
+.card{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #F6F6F6;
+    width: 25%;
+    overflow: hidden;
+    height: 12.5%;
+}
+
+.card-large{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #F6F6F6;
+    width: 25%;
+    height: 500px;
+}
+
+#card-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
