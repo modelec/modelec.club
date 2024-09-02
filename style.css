@@ -10,15 +10,26 @@
     height: 12.5%;
 }
 
-.card-large{
+.card-large-height{
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #F6F6F6;
-    width: 25%;
-    height: 500px;
+    width: 40%;
+    height: 12.5%;
+}
+
+.card-large-width{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #F6F6F6;
+    width: 61.5%;
+    height: 12.5%;
 }
 
 #card-div{
@@ -29,4 +40,49 @@
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+    border-bottom: black 1px solid;
+}
+
+#logo-modelec {
+    max-width: 12%;
+}
+
+#logo-modelec{
+    max-width: 12%;
+}
+
+#photo-equipe{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#photo-serge{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; /* Adjust as needed */
+    border-top: black 1px solid;
+}
+
+img{
+    border-radius: 20px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
 }
