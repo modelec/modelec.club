@@ -1,31 +1,42 @@
-let slideIndex = 0;
-let timer;
+document.querySelectorAll(".slideshow-container").forEach((container) => {
+    let slideIndex = 0;
+    let timer;
 
-function plusSlides(n) {
-    if (timer) clearTimeout(timer);
-    slideIndex+=n;
-    showSlides();
-}
+    let sliderChild = [...container.children].filter(child => child.classList.contains("slide"));
 
-function currentSlide(n) {
-    if (timer) clearTimeout(timer);
-    slideIndex = n;
-    showSlides();
-}
+    let prevBtn = container.querySelector(".prev");
+    let nextBtn = container.querySelector(".next");
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slide");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    if (slideIndex > slides.length - 1) {slideIndex = 0}
-    slides[slideIndex].style.display = "flex";
+    prevBtn.addEventListener("click", () => plusSlides(-1));
+    nextBtn.addEventListener("click", () => plusSlides(1));
 
-    timer = setTimeout(() => {
-        slideIndex++;
+    function plusSlides(n) {
+        if (timer) clearTimeout(timer);
+        slideIndex+=n;
         showSlides();
-    }, 5000);
-}
+    }
 
-showSlides(slideIndex);
+    function currentSlide(n) {
+        if (timer) clearTimeout(timer);
+        slideIndex = n;
+        showSlides();
+    }
+
+    function showSlides() {
+        let i;
+        for (i = 0; i < sliderChild.length; i++) {
+            sliderChild[i].style.display = "none";
+        }
+        if (slideIndex > sliderChild.length - 1) {slideIndex = 0}
+        sliderChild[slideIndex].style.display = "flex";
+
+        if (container.classList.contains("autoslide")) {
+            timer = setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 5000);
+        }
+    }
+
+    showSlides(slideIndex);
+});
