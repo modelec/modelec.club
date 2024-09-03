@@ -25,4 +25,3 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           uploads: |
             ./ => /var/www/modelec.club
-          delete: true
