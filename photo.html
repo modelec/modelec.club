@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelec ISEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+<div id="content">
+  <nav id="header">
+    <img src="assets/modelec-logo-full.png" alt="Logo Modelec" id="logo-modelec">
+    <div id="header-links">
+      <a class="link" href="index.html"><div class="header-link">Accueil</div></a>
+      <a class="link" href="photo.html"><div class="header-link">Photos</div></a>
+    </div>
+  </nav>
+  <div id="card-div">
+    <div class="card-very-large-width">
+      <h1 class="card-title">Photo coupe de France de robotique 2024</h1>
+      <div class="card-text">
+        <div class="slideshow-container">
+          <div class="slide fade">
+              <img src="assets/photo%20coupe%202024/IMG-20240511-WA0004.jpg" alt="photo coupe de france de robotique 2024" class="photo-coupe">
+          </div>
+          <div class="slide fade">
+              <img src="assets/photo%20coupe%202024/IMG_20240508_084436_1.jpg" alt="photo coupe de france de robotique 2024" class="photo-coupe">
+          </div>
+          <div class="slide fade">
+              <img src="assets/photo%20coupe%202024/IMG_20240511_161326.jpg" alt="photo coupe de france de robotique 2024" class="photo-coupe">
+          </div>
+          <div class="slide fade">
+              <img src="assets/photo%20coupe%202024/PXL_20240509_142944459.MP.jpg" alt="photo coupe de france de robotique 2024" class="photo-coupe">
+          </div>
+          <div class="slide fade">
+              <img src="assets/photo%20coupe%202024/PXL_20240510_230657006.NIGHT.jpg" alt="photo coupe de france de robotique 2024" class="photo-coupe">
+          </div>
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-very-large-width">
+        <h1 class="card-title">Vidéo coupe de france de robotique 2024</h1>
+        <div class="card-text">
+            <div class="video-slideshow-container">
+                <div class="vslide fade">
+                    <video controls autoplay class="video-coupe">
+                        <source src="assets/photo%20coupe%202024/serie%202.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="vslide fade">
+                    <video controls autoplay class="video-coupe">
+                        <source src="assets/photo%20coupe%202024/serie%203.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="vslide fade">
+                    <video controls autoplay class="video-coupe">
+                        <source src="assets/photo%20coupe%202024/serie%204.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="vslide fade">
+                    <video controls autoplay class="video-coupe">
+                        <source src="assets/photo%20coupe%202024/serie%205%20préparation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="vslide fade">
+                    <video controls autoplay class="video-coupe">
+                        <source src="assets/photo%20coupe%202024/serie%205.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button class="vprev" onclick="vplusSlides(-1)">&#10094;</button>
+                <button class="vnext" onclick="vplusSlides(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
