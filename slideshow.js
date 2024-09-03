@@ -1,22 +1,31 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+let timer;
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    if (timer) clearTimeout(timer);
+    slideIndex+=n;
+    showSlides();
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    if (timer) clearTimeout(timer);
+    slideIndex = n;
+    showSlides();
 }
 
-function showSlides(n) {
+function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slide");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "flex";
-    setTimeout(showSlides, 5000);
+    if (slideIndex > slides.length - 1) {slideIndex = 0}
+    slides[slideIndex].style.display = "flex";
+
+    timer = setTimeout(() => {
+        slideIndex++;
+        showSlides();
+    }, 5000);
 }
+
+showSlides(slideIndex);
