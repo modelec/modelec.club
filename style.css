@@ -61,7 +61,6 @@
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #e1e4ed;
-    width: 35%;
     height: 12.5%;
 }
 
@@ -229,4 +228,18 @@ body{
 
 video{
     border-radius: 20px;
+}
+
+.social-media {
+    border-radius: 20px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#Serge{
+    width: 93%;
 }
