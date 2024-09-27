@@ -34,4 +34,4 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           uploads: |
-            ./ => /var/www/modelec.club
+            ./dist => /var/www/modelec.club
