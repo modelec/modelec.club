@@ -1,102 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title> Modelec </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script src="slideshow.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="assets/modelec-logo-small.png">
-</head>
-<body>
-<div id="content">
-    <nav id="header">
-        <img src="assets/modelec-logo-full.png" alt="Logo Modelec" id="logo-modelec">
-        <div id="header-links">
-            <a class="link" href="#"><div class="header-link">Accueil</div></a>
-            <a class="link" href="photo.html"><div class="header-link">Photos</div></a>
-        </div>
-    </nav>
-    <div id="card-div">
-        <div class="card">
-            <h1 class="card-title">Qui sommes nous ?</h1>
-            <p class="card-text">
-                Bienvenue nous sommes le club Modelec, un club de robotique, électronique et modelisme . Nous sommes une association étudiante qui a pour but de promouvoir la robotique, l'électronique et le modelisme . Nous organisons des ateliers et des événements autour de ces thèmes. Nous participons également à la coupe de france de robotique où pour notre première participation en 2024 nous avons fini 14e sur 82.
-            </p>
-        </div>
-        <div class="card-large-height">
-            <h1 class="card-title">Une photo de l'équipe</h1>
-            <div class="card-text">
-                <img src="assets/Photo%20Bureau.jpg" alt="Photo de l'équipe" id="photo-equipe">
-                <p class="card-subtext">L'équipe Modelec lors de la coupe de France de robotique 2024</p>
-            </div>
-        </div>
-        <div class="card">
-            <h1 class="card-title">Nos projets pour l'année</h1>
-            <p class="card-text">
-                Nous voulons réitérer notre participation à la coupe de France de robotique en 2025. Nous voulons également organiser des ateliers de soudure, de programmation et de modélisme. Cette année, nous aimerions également organiser des événements autour de ces thèmes comme des visites de Fablab, des initiations,…
-            </p>
-        </div>
-        <div class="card">
-            <h1 class="card-title">Nos partenaires</h1>
-            <p class="card-text">
-                <div class="slideshow-container autoslide">
-                    <div class="slide fade">
-                        <a href="https://mercurycloud.fr"><img src="assets/partners/mercurycloud.png" alt="Logo Mercury Cloud" class="partner-logo"></a>
-                        <a href="https://mercurycloud.fr" class="link"><p class="partner-name">Mercury Cloud</p></a>
-                    </div>
-            <!---
-                    <div class="slide fade">
-                        <a href="https://www.isen-ouest.fr"><img src="assets/partners/isen.png" alt="Logo ISEN Nantes" class="partner-logo"></a>
-                        <a href="https://www.isen-ouest.fr" class="link"><p class="partner-name">ISEN Nantes</p></a>
-                    </div>
-                    ---->
-            <!---
-                    <div class="slide fade">
-                        <a href="https://www.instagram.com/odyssey_bde/"><img src="assets/partners/bde.jpg" alt="Logo BDE ISEN Nantes" class="partner-logo"></a>
-                        <a href="https://www.instagram.com/odyssey_bde/" class="link"><p class="partner-name">Odyssey BDE ISEN Nantes</p></a>
-                    </div>
---->
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-        </div>
-        <div class="card-large-width">
-            <h1 class="card-title">Notre robot</h1>
-            <p class="card-text">
-                Voici Serge, notre robot pour la coupe de France de robotique 2024. Il est équipé de 2 roues motrices, 2 roues codeuses, 3 pinces et 2 bras d'orientation pour les panneaux solaires. Il est également équipé d'une caméra pour la vision et d'un lidar pour la détection d'adversaire et la triangulation. Coté hardware, il est géré par un raspberry pi 5 et un arduino mega. Côté software, il est géré par des programmes C++ fait sur mesure dont le code est disponible sur notre <a href="https://github.com/modelec">github</a>.
-                <br>
-                <br>
-                A coté Serge est accompagné de 2 Pixels, ses PAMI (Partie Autonome Mobile Intelligente) qui sont des robots autonomes qui peuvent se déplacer et se repérer dans l'espace. Ils sont gérés par des arduino uno.
-            </p>
-        </div>
-        <div class="grid">
-            <div class="card" id="Serge">
-                <h1 class="card-title">Serge</h1>
-                <div class="card-text">
-                    <img src="assets/serge.jpg" alt="Photo de Serge" id="photo-serge">
-                    <p class="card-subtext">Serge et ses 2 Pixels</p>
-                </div>
-            </div>
-            <div class="card-contact">
-                <h1 class="card-title">Nous contacter</h1>
-                <p class="card-text">
-                    Vous pouvez nous contacter par mail à l'adresse <a href="mailto:contact@modelec.club" class="link"> contact@modelec.club</a> ou bien par message privé sur instagram.
-                </p>
-            </div>
-        </div>
-        <div class="card-large-height">
-            <h1 class="card-title">Nos réseaux sociaux</h1>
-            <p class="card-text">
-                <iframe src="https://www.instagram.com/modelec_isen/embed" class="social-media" width="100%" height="650px"></iframe>
-            </p>
-        </div>
-    </div>
-    <div id="footer">
-        <p>© 2024 Modelec ISEN Nantes. Site réalisé par AppenISEN</p>
-    </div>
-</div>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
