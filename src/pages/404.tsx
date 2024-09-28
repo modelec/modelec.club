@@ -8,7 +8,7 @@ const NotFound: React.FC = () => {
       <Navbar />
       <h2>Note du 28/09/2024</h2>
       <p>
-        Le site est actuellement en rénovation (passage de vanilla à ReactJS.
+        Le site est actuellement en rénovation (passage de vanilla à ReactJS).
       </p>
       <p>
         Nous sommes désolé pour la gêne occasionnée, nous faisons de notre mieux
