@@ -35,3 +35,4 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           uploads: |
             ./dist => /var/www/modelec.club
+            ./dist/.htaccess => /var/www/modelec.club/.htaccess
