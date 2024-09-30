@@ -14,14 +14,14 @@ const Home: React.FC = () => {
       <Navbar />
       <div className={'logo-container'}>
         <img
-          src={'/assets/images/logo-full.png'}
+          src={'https://r2.modelec.club/logo-full.png'}
           alt={'Modelec Logo'}
           id={'logo-full-home'}
         />
       </div>
       <div className={'photo-container'}>
         <img
-          src={'/assets/images/coupe-2024.png'}
+          src={'https://r2.modelec.club/coupe-2024.png'}
           alt={'Modelec Photo'}
           id={'photo-coupe-home'}
         />
@@ -40,24 +40,24 @@ const Home: React.FC = () => {
             __html:
               "<span style='color: #0693E3;font-size: 1.5em;'>14 ème</span> sur 82 équipes<br>1 ère participation<p style='font-size: 2em; margin: 0 auto;'>100% étudiants</p>",
           }}
-          image={'/assets/images/serge-pixel.png'}
+          image={'https://r2.modelec.club/serge-pixel.png'}
           className={'coupe-title'}
         />
         <h1 className={'title-white'}>Nos Réseaux</h1>
         <SocialNetworks
           networks={[
             {
-              icon: '/assets/svg/github.svg',
+              icon: 'https://r2.modelec.club/github.svg',
               link: 'https://www.github.com/modelec',
               name: 'Modelec_ISEN',
             },
             {
-              icon: '/assets/svg/youtube.svg',
+              icon: 'https://r2.modelec.club/youtube.svg',
               link: 'https://youtube.com/modelec',
               name: 'Modelec_ISEN',
             },
             {
-              icon: '/assets/svg/insta.svg',
+              icon: 'https://r2.modelec.club/insta.svg',
               link: 'https://www.instagram.com/modelec_isen',
               name: 'Modelec_ISEN',
             },
@@ -66,9 +66,9 @@ const Home: React.FC = () => {
         <FromLeftCardCarousel
           title={'Nos Partenaires'}
           carousel={[
-            '/assets/images/isen.png',
-            '/assets/images/mercurycloud.png',
-            '/assets/images/bde.png',
+            'https://r2.modelec.club/isen.png',
+            'https://r2.modelec.club/mercurycloud.png',
+            'https://r2.modelec.club/bde.png',
           ]}
           links={[
             'https://isen-nantes.fr',
@@ -88,30 +88,30 @@ const Home: React.FC = () => {
         <h1>Nos Projets</h1>
         <Carousel
           images={[
-            '/assets/images/robot1.jpg',
-            '/assets/images/robot2.jpg',
-            '/assets/images/robot3.jpg',
-            '/assets/images/robot4.jpg',
-            '/assets/images/robot5.jpg',
+            'https://r2.modelec.club/robot1.jpg',
+            'https://r2.modelec.club/robot2.jpg',
+            'https://r2.modelec.club/robot3.jpg',
+            'https://r2.modelec.club/robot4.jpg',
+            'https://r2.modelec.club/robot5.jpg',
           ]}
         />
         <h1>L'équipe</h1>
         <Team
           team={[
             {
-              name: 'Jean Dupont',
+              name: 'Maxime Chauveau',
               role: 'Président',
-              image: '/assets/images/team-member/maxime.png',
+              image: 'https://r2.modelec.club/maxime.png',
             },
             {
               name: 'Marie Dupont',
               role: 'Trésorière',
-              image: '/assets/images/team-member/maxime.png',
+              image: 'https://r2.modelec.club/maxime.png',
             },
             {
               name: 'Pierre Dupont',
               role: 'Secrétaire',
-              image: '/assets/images/team-member/maxime.png',
+              image: 'https://r2.modelec.club/maxime.png',
             },
           ]}
         />

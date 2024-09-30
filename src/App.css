@@ -507,3 +507,10 @@
     align-items: center;
     gap: 2em;
 }
+
+.project-small-card img {
+    width: 25%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
