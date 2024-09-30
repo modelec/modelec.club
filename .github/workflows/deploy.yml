@@ -25,6 +25,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          cp config/.htaccess dist/.htaccess
 
       - name: Copy build directory to server
         uses: Dylan700/sftp-upload-action@v1.2.3
