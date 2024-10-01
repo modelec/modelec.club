@@ -5,8 +5,7 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
-
-  <Directory /var/www/modelec.club>
-      AllowOverride All
-  </Directory>
 </IfModule>
+
+AddType application/javascript .js
+AddType text/css .css
