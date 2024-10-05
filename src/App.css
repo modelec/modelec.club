@@ -117,13 +117,10 @@ body {
 .from-right-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 2em;
-    align-items: center;
     background-color: white;
     margin-left: auto;
     margin-right: 4em;
-    padding: 1em;
     border-radius: 20px;
     width: 60%;
     overflow: hidden;
@@ -133,13 +130,19 @@ body {
 .from-right-card img {
     width: 30%;
     height: auto;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     object-fit: cover;
     display: block;
 }
 
+.from-right-card-content {
+    padding: 2em;
+}
+
 .coupe-title{
     color: #0693E3;
+    margin: 0.5em 0 1em 0;
 }
 
 .social-network {
@@ -309,7 +312,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2em;
 }
 
 .footer {
