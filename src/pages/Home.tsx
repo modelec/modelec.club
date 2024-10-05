@@ -49,12 +49,12 @@ const Home: React.FC = () => {
             {
               icon: 'https://r2.modelec.club/github.svg',
               link: 'https://www.github.com/modelec',
-              name: 'Modelec_ISEN',
+              name: 'Modelec',
             },
             {
               icon: 'https://r2.modelec.club/youtube.svg',
-              link: 'https://youtube.com/modelec',
-              name: 'Modelec_ISEN',
+              link: 'https://www.youtube.com/@modelec2165',
+              name: 'Modelec',
             },
             {
               icon: 'https://r2.modelec.club/insta.svg',
@@ -104,13 +104,33 @@ const Home: React.FC = () => {
               image: 'https://r2.modelec.club/maxime.png',
             },
             {
-              name: 'Marie Dupont',
-              role: 'Trésorière',
+              name: 'Vincent Rocher',
+              role: 'Vice-Président | Responsable Technique',
               image: 'https://r2.modelec.club/maxime.png',
             },
             {
-              name: 'Pierre Dupont',
+              name: 'Felix Marquet',
               role: 'Secrétaire',
+              image: 'https://r2.modelec.club/maxime.png',
+            },
+            {
+              name: 'Florent Butery',
+              role: 'Trésorier',
+              image: 'https://r2.modelec.club/maxime.png',
+            },
+            {
+              name: 'Cléo Sionville',
+              role: 'Responsable Communication',
+              image: 'https://r2.modelec.club/maxime.png',
+            },
+            {
+              name: 'Arthur Grossmann',
+              role: 'Responsable Evenementiel',
+              image: 'https://r2.modelec.club/maxime.png',
+            },
+            {
+              name: 'Allan Cueff',
+              role: 'Responsable Partenariat',
               image: 'https://r2.modelec.club/maxime.png',
             },
           ]}
