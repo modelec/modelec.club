@@ -17,7 +17,7 @@ interface SocialNetworksProps {
 
 const SocialNetwork: React.FC<SocialNetworkProps> = ({ icon, link, name }) => {
     return (
-        <a href={link} className={"social-network"}>
+        <a href={link} className={"social-network"} target="_blank" rel="noreferrer">
             <img src={icon} alt={name}/>
             <p className={"social-network-name"}>{name}</p>
         </a>
@@ -26,7 +26,7 @@ const SocialNetwork: React.FC<SocialNetworkProps> = ({ icon, link, name }) => {
 
 export const SocialNetworkSmall: React.FC<SocialNetworkSmallProps> = ({ icon, link }) => {
     return (
-        <a href={link} className={"social-network-small"}>
+        <a href={link} className={"social-network-small"} target="_blank" rel="noreferrer">
             <img src={icon} alt={link} className={"social-network-small-icon"}/>
         </a>
     );
