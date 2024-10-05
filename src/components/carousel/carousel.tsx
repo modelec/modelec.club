@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from 'react';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 interface CarouselProps {
     images: string[];
@@ -10,7 +12,7 @@ interface CarouselClickablesProps {
 }
 
 export const Carousel: React.FC<CarouselProps> = ({ images }) => {
-    const [currentImage, setCurrentImage] = React.useState(0);
+    const [currentImage, setCurrentImage] = useState(0);
 
     const nextImage = () => {
         setCurrentImage((currentImage + 1) % images.length);
@@ -36,14 +38,26 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
 export const CarouselClickables: React.FC<CarouselClickablesProps> = ({ images, links }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fade, setFade] = useState("fade-in");
+    const intervalRef = useRef<number | null>(null); // Store the interval ID
 
-    useEffect(() => {
-        const interval = setInterval(() => {
+    const resetInterval = () => {
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+        }
+        intervalRef.current = window.setInterval(() => {
             handleNextImage();
         }, 3000);
+    };
 
-        return () => clearInterval(interval);
-    }, [images.length]);
+    useEffect(() => {
+        resetInterval();
+
+        return () => {
+            if (intervalRef.current) {
+                clearInterval(intervalRef.current);
+            }
+        };
+    }, []);
 
     const handleNextImage = () => {
         setFade("fade-out");
@@ -51,6 +65,7 @@ export const CarouselClickables: React.FC<CarouselClickablesProps> = ({ images, 
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
             setFade("fade-in");
         }, 500);
+        resetInterval();
     };
 
     const handlePreviousImage = () => {
@@ -59,26 +74,25 @@ export const CarouselClickables: React.FC<CarouselClickablesProps> = ({ images, 
             setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
             setFade("fade-in");
         }, 500);
+        resetInterval();
     };
 
     return (
-        <div className="carousel-container">
-            <div className="carousel-slide" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                {images.map((image, index) => (
-                    <a key={index} href={links[index]} target="_blank" rel="noopener noreferrer">
-                        <img
-                            src={image}
-                            alt={`Slide ${index}`}
-                            className={`carousel-image ${fade}`}
-                            style={{ display: index === currentIndex ? 'block' : 'none' }}
-                        />
-                    </a>
-                ))}
-            </div>
-            <div className="carousel-buttons">
-                <button onClick={handlePreviousImage}>Previous</button>
-                <button onClick={handleNextImage}>Next</button>
-            </div>
-        </div>
+      <div className="carousel-container">
+          <ArrowBackIosNewIcon className="carousel-button" onClick={handlePreviousImage}/>
+          <div className="carousel-slide">
+              {images.map((image, index) => (
+                <a key={index} href={links[index]} target="_blank" rel="noopener noreferrer"
+                   hidden={index !== currentIndex}>
+                    <img
+                      src={image}
+                      alt={`Slide ${index}`}
+                      className={`carousel-image ${fade}`}
+                    />
+                </a>
+              ))}
+          </div>
+          <ArrowForwardIosIcon className="carousel-button" onClick={handleNextImage}/>
+      </div>
     );
 };
