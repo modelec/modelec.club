@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <div className={'footer-separator'}></div>
         <div className={'footer-content'}>
           <div className={'footer-content-top'}>
-            <img src={'/assets/images/logo-full.png'} alt={'Modelec'} />
+            <img src={'https://r2.modelec.club/logo-full.png'} alt={'Modelec'} />
           </div>
           <div className={'footer-content-middle'}>
             <div className={'social-networks'}>
@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
               />
               <SocialNetworkSmall
                 icon={'https://r2.modelec.club/youtube-dark.svg'}
-                link={'https://youtube.com/modelec'}
+                link={'https://www.youtube.com/@modelec2165'}
               />
               <SocialNetworkSmall
                 icon={'https://r2.modelec.club/insta-dark.svg'}
