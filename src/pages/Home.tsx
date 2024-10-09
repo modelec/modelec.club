@@ -1,18 +1,15 @@
 import React from 'react';
-import { Navbar } from '../components/navbar/navbar.tsx';
-import { MiddleText } from '../components/middletext/middletext.tsx';
-import { FromRightCard } from '../components/sidecard/fromrightcard.tsx';
-import { SocialNetworks } from '../components/socialnetwork/socialnetwork.tsx';
-import { FromLeftCardCarousel } from '../components/sidecard/fromleftcard.tsx';
+
+import { Github, Youtube, Instagram, BookmarkBook } from 'iconoir-react';
+
+import { Box } from '../components/box/box.tsx';
+import { SocialNetwork } from '../components/socialnetwork/socialnetwork.tsx';
 import { Carousel } from '../components/carousel/carousel.tsx';
-import { Team } from '../components/team/team.tsx';
-import { Footer } from '../components/footer/footer.tsx';
 
 const Home: React.FC = () => {
   return (
     <>
-      <Navbar />
-      <div className={'logo-container'}>
+      <div className={'page-banner'}>
         <img
           src={'https://r2.modelec.club/logo-full.png'}
           alt={'Modelec Logo'}
@@ -116,7 +113,6 @@ const Home: React.FC = () => {
           ]}
         />
       </div>
-      <Footer />
     </>
   );
 };
