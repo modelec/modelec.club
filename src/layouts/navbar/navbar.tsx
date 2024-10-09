@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Menu } from 'iconoir-react';
 
 import './navbar.css';
+import { useWindowsSize } from '../../hooks/useWindowsSize';
 
 interface NavbarLinkProps {
   text: string;
@@ -37,6 +38,11 @@ export const Navbar = ({ activeLink }: { activeLink: number }) => {
   ]
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const { width } = useWindowsSize();
+
+  useEffect(() => {
+    if (width >= 850) setIsMobileMenuOpen(false);
+  }, [width]);
 
   return (
     <>
@@ -76,6 +82,9 @@ export const Navbar = ({ activeLink }: { activeLink: number }) => {
           </nav>
         }
       </nav>
+      { isMobileMenuOpen &&
+        <div className={'mobileNavbar-overlay'} onClick={() => setIsMobileMenuOpen(false)}></div>
+      }
     </>
   );
 };
