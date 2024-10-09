@@ -1,14 +1,11 @@
 import React from 'react';
-import { Navbar } from '../components/navbar/navbar';
 import PartenairesList from '../components/partenaires/partenaires';
-import { Footer } from '../components/footer/footer.tsx';
 import { FromLeftCard } from '../components/sidecard/fromleftcard.tsx';
 import { FromRightCard } from '../components/sidecard/fromrightcard.tsx';
 
 const Partenaires: React.FC = () => {
   return (
     <>
-      <Navbar />
       <PartenairesList
         partenaires={[
           {
@@ -54,7 +51,6 @@ const Partenaires: React.FC = () => {
           }
         />
       </div>
-      <Footer />
     </>
   );
 };

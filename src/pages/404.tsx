@@ -1,11 +1,8 @@
 import React from 'react';
-import { Navbar } from '../components/navbar/navbar';
-import { Footer } from '../components/footer/footer.tsx';
 
 const NotFound: React.FC = () => {
   return (
     <div>
-      <Navbar />
       <h2>Note du 28/09/2024</h2>
       <p>
         Le site est actuellement en rénovation (passage de vanilla à ReactJS).
@@ -25,7 +22,6 @@ const NotFound: React.FC = () => {
         ici, nous sommes disponibles par mail à{' '}
         <a href={'mailto:contact@modelec.club'}>contact@modelec.club</a>
       </p>
-      <Footer />
     </div>
   );
 };
