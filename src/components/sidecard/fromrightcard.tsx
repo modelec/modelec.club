@@ -1,5 +1,7 @@
 import React from "react";
 
+import './sidecard.css';
+
 interface FromRightCardProps {
     title: string;
     content: { __html: string };

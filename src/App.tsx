@@ -6,10 +6,10 @@ import './App.css';
 import { Navbar } from './layouts/navbar/navbar';
 import { Footer } from './layouts/footer/footer';
 
-import Home from './pages/Home';
-import NotFound from './pages/404';
-import Partenaires from './pages/Partenaires';
-import Projets from './pages/Projets';
+import Home from './pages/home/Home';
+import NotFound from './pages/404/404';
+import Partenaires from './pages/partenaires/Partenaires';
+import Projets from './pages/projets/Projets';
 
 const App: React.FC = () => {
   return (<>

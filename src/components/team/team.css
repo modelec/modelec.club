@@ -1,0 +1,33 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.team-member-image img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.team-member-wrapper {
+    position: relative;
+}
+
+.offset-left {
+    margin-top: -1em;
+    margin-right: 20em;
+}
+
+.offset-right {
+    margin-top: -2em;
+    margin-left: 20em;
+}

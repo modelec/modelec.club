@@ -1,5 +1,7 @@
 import React from "react";
 
+import './sidecard.css';
+
 interface FromLeftCardProps {
     title: string;
     content: string;
@@ -26,7 +28,7 @@ export const FromLeftCard: React.FC<FromLeftCardProps> = ({ title, content, imag
     )
 }
 
-export const FromLeftCardCarousel: React.FC<FromLeftCardCarouselProps> = ({ title, carousel, links }) => {
+export const FromLeftCardCarousel: React.FC<FromLeftCardCarouselProps> = ({ title }) => {
     return (
         <>
             <div className={"from-left-card-carousel"}>

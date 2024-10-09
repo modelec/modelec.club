@@ -2,9 +2,11 @@ import React from 'react';
 
 import { Github, Youtube, Instagram, BookmarkBook } from 'iconoir-react';
 
-import { Box } from '../components/box/box.tsx';
-import { SocialNetwork } from '../components/socialnetwork/socialnetwork.tsx';
-import { Carousel } from '../components/carousel/carousel.tsx';
+import { Box } from '../../components/box/box.tsx';
+import { SocialNetwork } from '../../components/socialnetwork/socialnetwork.tsx';
+import { Carousel } from '../../components/carousel/carousel.tsx';
+
+import './Home.css';
 
 const Home: React.FC = () => {
   return (
