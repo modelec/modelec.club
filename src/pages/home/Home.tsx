@@ -16,7 +16,6 @@ const Home: React.FC = () => {
           className={'page-banner-image'}
           src={'https://r2.modelec.club/coupe-2024.png'}
           alt={'Modelec Photo'}
-          id={'photo-coupe-home'}
         />
         <div className={'page-banner-content'}>
           <h3 className={'page-banner-header'}>Qui sommes-nous ?</h3>

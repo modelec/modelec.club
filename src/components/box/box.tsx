@@ -1,5 +1,7 @@
 import React from "react";
 
+import './box.css';
+
 interface BoxImageProps {
     type: "image";
     src: string;

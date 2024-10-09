@@ -112,6 +112,30 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .page {
+        padding-inline: 25px;
+    }
+    .page-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .page-banner-image {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .page-banner-content {
+        position: relative;
+        translate: 0;
+        max-width: none;
+    }
+    .page-title {
+        font-size: 1.75rem;
+    }
+}
+
 .content-container {
     padding-top: 2em;
     padding-bottom: 2em;

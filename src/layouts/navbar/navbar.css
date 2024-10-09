@@ -6,9 +6,9 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1000;
-    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.1);
+    z-index: 500;
     padding-inline: 100px;
+    box-shadow: var(--shadow);
 }
 
 .navbar-logo {
@@ -26,7 +26,7 @@
     gap: 3em;
 }
 
-.navbar-link {
+.navbar-link, .navbar-open {
     text-decoration: none;
     font-size: 1em;
     height: 100%;
@@ -34,6 +34,10 @@
     align-items: center;
     font-weight: 400;
     position: relative;
+    border: none;
+    background: none;
+    align-self: center;
+    cursor: pointer;
     &.link_active::after {
         content: "";
         position: absolute;
@@ -43,5 +47,88 @@
         height: 4px;
         background: var(--main);
         border-radius: 999px;
+    }
+}
+.mobileNavbar {
+    background: var(--lightGray);
+    z-index: 1000;
+    padding: 1.5em 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.mobileNavbar-title {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    text-align: center;
+    position: relative;
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 25px;
+        height: 4px;
+        background: var(--main);
+        translate: 0 -50%;
+    }
+    &::before { left: 0; }
+    &::after { right: 0; }
+}
+.mobileNavbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+.mobileNavbar-link {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.3em 1em;
+    font-weight: 400;
+    background: var(--white);
+    color: var(--darkGray);
+    transition: color 0.3s;
+    position: relative;
+    width: fit-content;
+    border-radius: 999px;
+    &.link_active {
+        color: var(--black);
+        text-decoration: underline var(--main) 2px;
+    }
+    /* &.link_active::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        width: 20px;
+        height: 4px;
+        translate: 100% -50%;
+        border-radius: 999px;
+        background: var(--main);
+    } */
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar-logo-img.img_small { display: none; }
+    .navbar-open { display: none; }
+}
+@media screen and (min-width: 850px) and (max-width: 999px) {
+    .navbar-logo-img.img_large { display: none; }
+    .navbar-open { display: none; }
+}
+@media screen and (max-width: 849px) {
+    .navbar-logo-img.img_small { display: none; }
+    .navbar-links { display: none; }
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar {
+        padding-inline: 25px;
     }
 }
