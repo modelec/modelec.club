@@ -16,7 +16,7 @@ const PartenairesList: React.FC<PartenairesListProps> = ({ partenaires }) => {
             {partenaires.map((partenaire, index) => (
                 <div key={index}>
                     <h2>{partenaire.title}</h2>
-                    <a href={partenaire.link} className={"partenaires-list-a"}>
+                    <a href={partenaire.link} className={"partenaires-list-a"} target="_blank" rel="noreferrer">
                         <img src={partenaire.logo} alt={partenaire.title} className={"partenaires-list-image"}/>
                     </a>
                 </div>

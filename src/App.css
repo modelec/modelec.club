@@ -6,7 +6,7 @@
     border-bottom-right-radius: 25px; /* Arrondir les coins en bas */
     box-shadow: var(--shadow);
     max-width: 35%;
-    margin: 0 auto; /* Centrer le conteneur */
+    margin: 2rem auto 0 auto; /* Centrer le conteneur */
 }
 
 #logo-full-home {
@@ -48,9 +48,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 3em;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin: 3em 10em;
     gap: 3em;
 }
 
@@ -67,28 +65,18 @@
 .from-right-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    gap: 2em;
     background-color: white;
     margin-left: auto;
-    padding-right: 2em;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    width: 70%;
+    margin-right: 4em;
+    border-radius: 20px;
+    width: 60%;
     overflow: hidden;
     height: auto;
 }
 
-.from-right-card-image {
-    flex: 3;
-}
-
-.from-right-card-content {
-    flex: 4;
-}
-
 .from-right-card img {
-    width: 55%;
+    width: 30%;
     height: auto;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -96,8 +84,13 @@
     display: block;
 }
 
+.from-right-card-content {
+    padding: 2em;
+}
+
 .coupe-title{
     color: #0693E3;
+    margin: 0.5em 0 1em 0;
 }
 
 .social-network {
@@ -135,57 +128,42 @@
 .from-left-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 2em;
     align-items: center;
     background-color: white;
     margin-right: auto;
-    padding-right: 2em;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 70%;
+    margin-left: 4em;
+    padding: 1em;
+    border-radius: 20px;
+    width: 60%;
     overflow: hidden;
     height: auto;
 }
 
 .from-left-card img {
-    width: 55%;
+    width: 30%;
     height: auto;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
     object-fit: cover;
     display: block;
 }
 
-.from-left-card-image {
-    flex: 3;
-}
-
-.from-left-card-content {
-    flex: 4;
-}
-
 .from-left-card-carousel {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     background-color: white;
-    margin-right: auto;
-    padding-right: 2em;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 70%;
+    margin: 2em auto 0 4em;
+    padding: 1em;
+    border-radius: 20px;
+    width: 50%;
     overflow: hidden;
-    height: auto;
 }
 
-.from-left-card-carousel img {
-    padding-left: 40vh;
+/*.from-left-card-carousel img {
     width: 50%;
     height: auto;
     object-fit: cover;
     display: block;
-}
+}*/
 
 .botton-container-home {
     display: flex;
@@ -244,6 +222,7 @@
     height: 10em;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
 }
 
 .partenaires-list-a {
@@ -312,7 +291,6 @@
     flex-direction: column;
     gap: 1em;
     border-radius: 20px;
-    padding-right: 1em;
     background-color: white;
     color: black;
     width: 50%;

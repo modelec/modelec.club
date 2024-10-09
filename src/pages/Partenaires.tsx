@@ -10,17 +10,17 @@ const Partenaires: React.FC = () => {
         partenaires={[
           {
             title: 'ISEN Nantes',
-            logo: '/assets/images/isen.png',
+            logo: 'https://r2.modelec.club/isen.png',
             link: 'https://www.isen-nantes.fr',
           },
           {
             title: 'MercuryCloud',
-            logo: '/assets/images/mercurycloud.png',
+            logo: 'https://r2.modelec.club/mercurycloud.png',
             link: 'https://www.mercurycloud.fr',
           },
           {
             title: 'Odyssey BDE',
-            logo: '/assets/images/bde.png',
+            logo: 'https://r2.modelec.club/bde.png',
             link: 'https://instagram.com/odyssey_bde',
           },
         ]}
@@ -28,7 +28,7 @@ const Partenaires: React.FC = () => {
       <div className={'content-container'}>
         <FromLeftCard
           title={'ISEN Nantes'}
-          image={'/assets/images/isen.png'}
+          image={'https://r2.modelec.club/isen.png'}
           content={
             "L'ISEN Nantes est une école d'ingénieurs généraliste en 5 ans. Elle forme des ingénieurs dans les domaines de l'électronique, de l'informatique et des télécommunications. Ils nous mettent à disposition un local pour travailler sur nos projets."
           }
@@ -36,7 +36,7 @@ const Partenaires: React.FC = () => {
         <div className={'separator'}></div>
         <FromRightCard
           title={'MercuryCloud'}
-          image={'/assets/images/mercurycloud.png'}
+          image={'https://r2.modelec.club/mercurycloud.png'}
           content={{
             __html:
               'MercuryCloud est un hébergeur web, de vps ainsi que de serveur de jeu. Ils nous mettent à disposition un vps pour de la compilation et pour héberger certains service dont ce site web.',
@@ -45,7 +45,7 @@ const Partenaires: React.FC = () => {
         <div className={'separator'}></div>
         <FromLeftCard
           title={'Odyssey BDE'}
-          image={'/assets/images/bde.png'}
+          image={'https://r2.modelec.club/bde.png'}
           content={
             "Le BDE de l'ISEN Nantes, Odyssey, est un partenaire de longue date. Ils nous aident dans l'organisation de nos évènements et nous soutiennent dans nos projets."
           }

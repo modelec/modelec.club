@@ -121,13 +121,33 @@ const Home: React.FC = () => {
             },
             {
               image: 'https://r2.modelec.club/maxime.png',
-              title: 'Marie Dupont',
-              text: 'Trésorière',
+              title: 'Vincent Rocher',
+              text: 'Vice-Président | Responsable Technique',
             },
             {
               image: 'https://r2.modelec.club/maxime.png',
-              title: 'Pierre Dupont',
+              title: 'Felix Marquet',
               text: 'Secrétaire',
+            },
+            {
+              image: 'https://r2.modelec.club/maxime.png',
+              title: 'Florent Butery',
+              text: 'Trésorier',
+            },
+            {
+              image: 'https://r2.modelec.club/maxime.png',
+              title: 'Cléo Sionville',
+              text: 'Responsable Communication',
+            },
+            {
+              image: 'https://r2.modelec.club/maxime.png',
+              title: 'Arthur Grossmann',
+              text: 'Responsable Evenementiel',
+            },
+            {
+              image: 'https://r2.modelec.club/maxime.png',
+              title: 'Allan Cueff',
+              text: 'Responsable Partenariat',
             },
           ]}
         />
