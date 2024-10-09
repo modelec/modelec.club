@@ -1,5 +1,4 @@
 import React from "react";
-import { CarouselClickables } from "../carousel/carousel.tsx";
 
 interface FromLeftCardProps {
     title: string;
@@ -35,7 +34,7 @@ export const FromLeftCardCarousel: React.FC<FromLeftCardCarouselProps> = ({ titl
             <div className={"from-left-card-carousel"}>
                 <div className={"from-left-card-content"}>
                     <h2>{title}</h2>
-                    <CarouselClickables images={carousel} links={links} />
+                    {/* <CarouselClickables images={carousel} links={links} /> */}
                 </div>
             </div>
         </>
