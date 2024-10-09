@@ -7,6 +7,7 @@ import { SocialNetwork } from '../../components/socialnetwork/socialnetwork.tsx'
 import { Carousel } from '../../components/carousel/carousel.tsx';
 
 import './Home.css';
+import { Team } from '../../components/team/team.tsx';
 
 const Home: React.FC = () => {
   return (
@@ -113,43 +114,25 @@ const Home: React.FC = () => {
       </div>
       <div>
         <h2 className="page-title">Notre Équipe</h2>
-        <Carousel
-          carousel={[
+        <Team
+          groups={[
             {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Maxime Chauveau',
-              text: 'Président',
+              title: 'Bureau',
+              members: [
+                { name: 'Maxime Chauveau', role: 'Président', image: 'https://r2.modelec.club/maxime.png' },
+                { name: 'Vincent Rocher', role: 'Vice-Président', image: 'https://r2.modelec.club/maxime.png' },
+                { name: 'Felix Marquet', role: 'Secrétaire', image: 'https://r2.modelec.club/maxime.png' },
+                { name: 'Florent Butery', role: 'Trésorier', image: 'https://r2.modelec.club/maxime.png' },
+              ]
             },
             {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Vincent Rocher',
-              text: 'Vice-Président | Responsable Technique',
-            },
-            {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Felix Marquet',
-              text: 'Secrétaire',
-            },
-            {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Florent Butery',
-              text: 'Trésorier',
-            },
-            {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Cléo Sionville',
-              text: 'Responsable Communication',
-            },
-            {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Arthur Grossmann',
-              text: 'Responsable Evenementiel',
-            },
-            {
-              image: 'https://r2.modelec.club/maxime.png',
-              title: 'Allan Cueff',
-              text: 'Responsable Partenariat',
-            },
+              title: 'Responsables',
+              members: [
+                { name: 'Cléo Sionville', role: 'Communication', image: 'https://r2.modelec.club/maxime.png' },
+                { name: 'Arthur Grossmann', role: 'Evenementiel', image: 'https://r2.modelec.club/maxime.png' },
+                { name: 'Allan Cueff', role: 'Partenariat', image: 'https://r2.modelec.club/maxime.png' },
+              ]
+            }
           ]}
         />
       </div>
