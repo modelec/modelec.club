@@ -3,7 +3,7 @@ import React from 'react';
 import { Github, Youtube, Instagram, BookmarkBook } from 'iconoir-react';
 
 import { Box } from '../../components/box/box.tsx';
-import { SocialNetwork } from '../../components/socialnetwork/socialnetwork.tsx';
+import { SocialNetworkList } from '../../components/socialnetwork/socialnetwork.tsx';
 import { Carousel } from '../../components/carousel/carousel.tsx';
 
 import './Home.css';
@@ -29,15 +29,13 @@ const Home: React.FC = () => {
           <span className={'page-banner-label'}>Club 100% étudiant</span>
         </div>
       </div>
-
-      <div className={'media-container'}>
-        <SocialNetwork Icon={Instagram} name="modelec_isen" link="https://www.instagram.com/modelec_isen" />
-        <hr className={'media-separator'} />
-        <SocialNetwork Icon={Youtube} name="modelec" link="https://youtube.com/modelec" />
-        <hr className={'media-separator'} />
-        <SocialNetwork Icon={Github} name="modelec" link="https://www.github.com/modelec" />
-      </div>
-
+      <SocialNetworkList
+        networks={[
+          { Icon: Instagram, name: 'modelec_isen', link: 'https://www.instagram.com/modelec_isen' },
+          { Icon: Youtube, name: 'modelec', link: 'https://youtube.com/modelec' },
+          { Icon: Github, name: 'modelec', link: 'https://www.github.com/modelec' },
+        ]}
+      />
       <div className={'dual'}>
         <Box
           title={'Coupe de France de robotique'}
