@@ -4,6 +4,7 @@ import './navbar.css';
 
 export const Navbar = ({ activeLink }: { activeLink: number }) => {
   const links = [
+    { text: 'Accueil', link: '/' },
     { text: 'Projets', link: '/projets' },
     { text: 'Matériels', link: '/materiels' },
     { text: 'Photos', link: '/photos' },
