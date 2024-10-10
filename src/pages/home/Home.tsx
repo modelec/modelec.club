@@ -8,6 +8,7 @@ import { Carousel } from '../../components/carousel/carousel.tsx';
 
 import './Home.css';
 import { Team } from '../../components/team/team.tsx';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
@@ -74,13 +75,13 @@ const Home: React.FC = () => {
           </a>
         </div>
         <div className={'partners-actions'}>
-          <a className={'partners-action action_main'} href={'/partenaires'}>
+          <Link className={'partners-action action_main'} to={'partenaires/'}>
             <BookmarkBook />
             En savoir plus
-          </a>
-          <a className={'partners-action action_second'} href={'/contact'}>
+          </Link>
+          <Link className={'partners-action action_second'} to={'contact/'}>
             Devenir partenaire
-          </a>
+          </Link>
         </div>
       </div>
       <div>

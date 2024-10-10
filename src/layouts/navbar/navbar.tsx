@@ -4,6 +4,7 @@ import { Menu } from 'iconoir-react';
 
 import './navbar.css';
 import { useWindowsSize } from '../../hooks/useWindowsSize';
+import { Link } from 'react-router-dom';
 
 interface NavbarLinkProps {
   text: string;
@@ -13,28 +14,28 @@ interface NavbarLinkProps {
 
 const NavbarLink: React.FC<NavbarLinkProps> = ({ text, link, isActive }) => {
   return (
-      <a href={link} className={`navbar-link ${isActive ? "link_active" : ""}`}>
+      <Link to={link} className={`navbar-link ${isActive ? "link_active" : ""}`}>
           {text}
-      </a>
+      </Link>
   );
 };
 
 const MobileNavbarLink: React.FC<NavbarLinkProps> = ({ text, link, isActive }) => {
   return (
-      <a href={link} className={`mobileNavbar-link ${isActive ? "link_active" : ""}`}>
+      <Link to={link} className={`mobileNavbar-link ${isActive ? "link_active" : ""}`}>
           {text}
-      </a>
+      </Link>
   );
 };
 
 export const Navbar = ({ activeLink }: { activeLink: number }) => {
   const links = [
     { text: 'Accueil', link: '/' },
-    { text: 'Projets', link: '/projets' },
-    { text: 'Matériels', link: '/materiels' },
-    { text: 'Photos', link: '/photos' },
-    { text: 'Partenaires', link: '/partenaires' },
-    { text: 'Nous contacter', link: '/contact' },
+    { text: 'Projets', link: 'projets/' },
+    { text: 'Matériels', link: 'materiels/' },
+    { text: 'Photos', link: 'photos/' },
+    { text: 'Partenaires', link: 'partenaires/' },
+    { text: 'Nous contacter', link: 'contact/' },
   ]
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -47,7 +48,7 @@ export const Navbar = ({ activeLink }: { activeLink: number }) => {
   return (
     <>
       <nav className={'navbar'}>
-        <a href={'/'} className={'navbar-logo'}>
+        <Link to={'/'} className={'navbar-logo'}>
           <img
             className={'navbar-logo-img img_large'}
             src={'https://r2.modelec.club/logo-full.png'} // TODO: Change to SVG logo / import it from assets
@@ -58,7 +59,7 @@ export const Navbar = ({ activeLink }: { activeLink: number }) => {
             src={'https://r2.modelec.club/logo.png'} // TODO: Change to SVG logo / import it from assets
             alt={'Modelec Logo'}
           />
-        </a>
+        </Link>
         <div className={'navbar-links'}>
           {
             links.map((link, index) => (

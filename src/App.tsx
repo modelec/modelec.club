@@ -13,18 +13,18 @@ import Projets from './pages/projets/Projets';
 
 const App: React.FC = () => {
   return (<>
-    <Navbar activeLink={0} />
-    <div className="page">
-      <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/partenaires" element={<Partenaires />} />
-            <Route path="/projets" element={<Projets />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-      </Router>
-    </div>
-    <Footer />
+    <Router>
+      <Navbar activeLink={0} />
+      <div className="page">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/partenaires" element={<Partenaires />} />
+          <Route path="/projets" element={<Projets />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   </>);
 };
 
