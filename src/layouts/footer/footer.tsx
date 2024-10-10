@@ -27,11 +27,11 @@ export const Footer: React.FC = () => {
           <div className={'footer-links'}>
             {[
               { text: 'Accueil', link: '/' },
-              { text: 'Projets', link: 'projets/' },
-              { text: 'Matériels', link: 'materiels/' },
-              { text: 'Photos', link: 'photos/' },
-              { text: 'Partenaires', link: 'partenaires/' },
-              { text: 'Nous contacter', link: 'contact/' },
+              { text: 'Projets', link: '/projets/' },
+              { text: 'Matériels', link: '/materiels/' },
+              { text: 'Photos', link: '/photos/' },
+              { text: 'Partenaires', link: '/partenaires/' },
+              { text: 'Nous contacter', link: '/contact/' },
             ].map((link) => <FooterLink key={link.text} {...link} />)}
           </div>
         </div>

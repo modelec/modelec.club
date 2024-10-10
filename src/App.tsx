@@ -12,16 +12,17 @@ import Partenaires from './pages/partenaires/Partenaires';
 import Projets from './pages/projets/Projets';
 
 const App: React.FC = () => {
+
   return (<>
     <Router>
-      <Navbar activeLink={0} />
+      <Navbar />
       <div className="page">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/partenaires" element={<Partenaires />} />
-          <Route path="/projets" element={<Projets />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/partenaires" element={<Partenaires />} />
+            <Route path="/projets" element={<Projets />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
       </div>
       <Footer />
     </Router>

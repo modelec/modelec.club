@@ -4,7 +4,7 @@ import { Menu } from 'iconoir-react';
 
 import './navbar.css';
 import { useWindowsSize } from '../../hooks/useWindowsSize';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface NavbarLinkProps {
   text: string;
@@ -28,15 +28,18 @@ const MobileNavbarLink: React.FC<NavbarLinkProps> = ({ text, link, isActive }) =
   );
 };
 
-export const Navbar = ({ activeLink }: { activeLink: number }) => {
+export const Navbar = () => {
+  const location = useLocation();
   const links = [
     { text: 'Accueil', link: '/' },
-    { text: 'Projets', link: 'projets/' },
-    { text: 'Matériels', link: 'materiels/' },
-    { text: 'Photos', link: 'photos/' },
-    { text: 'Partenaires', link: 'partenaires/' },
-    { text: 'Nous contacter', link: 'contact/' },
+    { text: 'Projets', link: '/projets/' },
+    { text: 'Matériels', link: '/materiels/' },
+    { text: 'Photos', link: '/photos/' },
+    { text: 'Partenaires', link: '/partenaires/' },
+    { text: 'Nous contacter', link: '/contact/' },
   ]
+
+  const activeLink = links.findIndex(link => link.link === location.pathname);
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const { width } = useWindowsSize();
@@ -44,6 +47,8 @@ export const Navbar = ({ activeLink }: { activeLink: number }) => {
   useEffect(() => {
     if (width >= 850) setIsMobileMenuOpen(false);
   }, [width]);
+
+  useEffect(() => setIsMobileMenuOpen(false), [location]);
 
   return (
     <>

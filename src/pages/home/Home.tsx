@@ -75,11 +75,11 @@ const Home: React.FC = () => {
           </a>
         </div>
         <div className={'partners-actions'}>
-          <Link className={'partners-action action_main'} to={'partenaires/'}>
+          <Link className={'partners-action action_main'} to={'/partenaires/'}>
             <BookmarkBook />
             En savoir plus
           </Link>
-          <Link className={'partners-action action_second'} to={'contact/'}>
+          <Link className={'partners-action action_second'} to={'/contact/'}>
             Devenir partenaire
           </Link>
         </div>
