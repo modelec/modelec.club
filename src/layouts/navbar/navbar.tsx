@@ -30,6 +30,8 @@ const MobileNavbarLink: React.FC<NavbarLinkProps> = ({ text, link, isActive }) =
 
 export const Navbar = () => {
   const location = useLocation();
+  const pathname = location.pathname.endsWith('/') ? location.pathname : location.pathname + '/';
+
   const links = [
     { text: 'Accueil', link: '/' },
     { text: 'Projets', link: '/projets/' },
@@ -39,7 +41,7 @@ export const Navbar = () => {
     { text: 'Nous contacter', link: '/contact/' },
   ]
 
-  const activeLink = links.findIndex(link => link.link === location.pathname);
+  const activeLink = links.findIndex(link => link.link === pathname);
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const { width } = useWindowsSize();
