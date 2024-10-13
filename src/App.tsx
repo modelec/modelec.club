@@ -10,6 +10,7 @@ import Home from './pages/home/Home';
 import NotFound from './pages/404/404';
 import Partenaires from './pages/partenaires/Partenaires';
 import Projets from './pages/projets/Projets';
+import Contact from './pages/contact/Contact';
 
 const App: React.FC = () => {
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/partenaires" element={<Partenaires />} />
             <Route path="/projets" element={<Projets />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       </div>
