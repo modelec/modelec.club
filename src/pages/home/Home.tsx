@@ -9,27 +9,20 @@ import { Carousel } from '../../components/carousel/carousel.tsx';
 import './Home.css';
 import { Team } from '../../components/team/team.tsx';
 import { Link } from 'react-router-dom';
+import { Banner } from '../../components/banner/banner.tsx';
 
 const Home: React.FC = () => {
   return (
     <>
-      <div className={'page-banner'}>
-        <img
-          className={'page-banner-image'}
-          src={'https://r2.modelec.club/coupe-2024.png'}
-          alt={'Modelec Photo'}
-        />
-        <div className={'page-banner-content'}>
-          <h3 className={'page-banner-header'}>Qui sommes-nous ?</h3>
-          <p className={'page-banner-text'}>
+      <Banner
+        image={{ src: 'https://r2.modelec.club/coupe-2024.png', alt: 'Modelec Photo' }}
+        header={'Qui sommes-nous ?'}
+        label={'Club 100% étudiant'}
+      >
             Nous sommes <u>Modelec</u>, une association étudiante de l'<u>ISEN</u> qui a pour but de promouvoir la <b>robotique</b>, l'<b>électronique</b> et le <b>modélisme</b> auprès des étudiants de notre campus grâce à l'organisation d'ateliers et d'événements.
-          </p>
-          <p className={'page-banner-text'}>
+        <br />
             Nous participons également à la coupe de <u>France de robotique</u> où en 2024, nous avons fini <u>14e</u> sur 82 pour notre <u>première participation</u>.
-          </p>
-          <span className={'page-banner-label'}>Club 100% étudiant</span>
-        </div>
-      </div>
+      </Banner>
       <SocialNetworkList
         networks={[
           { Icon: Instagram, name: 'modelec_isen', link: 'https://www.instagram.com/modelec_isen' },
