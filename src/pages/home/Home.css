@@ -5,10 +5,6 @@
 }
 
 .partners {
-    box-shadow: 0 0 0 100vmax var(--black);
-    clip-path: inset(0 -100vmax);
-    padding-block: 4rem;
-    background: var(--black);
     max-width: 500px;
 }
 .partners-title {

@@ -19,9 +19,9 @@ const Home: React.FC = () => {
         header={'Qui sommes-nous ?'}
         label={'Club 100% étudiant'}
       >
-            Nous sommes <u>Modelec</u>, une association étudiante de l'<u>ISEN</u> qui a pour but de promouvoir la <b>robotique</b>, l'<b>électronique</b> et le <b>modélisme</b> auprès des étudiants de notre campus grâce à l'organisation d'ateliers et d'événements.
+        Nous sommes <u>Modelec</u>, une association étudiante de l'<u>ISEN</u> qui a pour but de promouvoir la <b>robotique</b>, l'<b>électronique</b> et le <b>modélisme</b> auprès des étudiants de notre campus grâce à l'organisation d'ateliers et d'événements.
         <br />
-            Nous participons également à la coupe de <u>France de robotique</u> où en 2024, nous avons fini <u>14e</u> sur 82 pour notre <u>première participation</u>.
+        Nous participons également à la coupe de <u>France de robotique</u> où en 2024, nous avons fini <u>14e</u> sur 82 pour notre <u>première participation</u>.
       </Banner>
       <SocialNetworkList
         networks={[
@@ -48,7 +48,7 @@ const Home: React.FC = () => {
           ]}
         />
       </div>
-      <div className={'partners'}>
+      <div className={'partners page-contrast'}>
         <h1 className={'partners-title'}>Ils rendent notre projet possible</h1>
         <p className={'partners-text'}>
           Un grand merci à nos partenaires qui nous soutiennent dans l'aventure et qui permettent à Modelec de continuer cette année encore.

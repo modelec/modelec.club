@@ -27,7 +27,8 @@ const Partenaires: React.FC = () => {
           },
         ]}
       />
-      <div className={'content-container'}>
+      
+      <div className={'page-contrast'}>
         <FromLeftCard
           title={'ISEN Nantes'}
           image={'https://r2.modelec.club/isen.png'}

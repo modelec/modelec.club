@@ -8,7 +8,7 @@ const Projets: React.FC = () => {
   return (
     <>
       <ProjetsHeader />
-      <div className={'content-container'}>
+      <div className={'project-header-container page-contrast'}>
         <ProjectBigCard
           imgtitle={'https://r2.modelec.club/cdf.png'}
           lefttext={{
