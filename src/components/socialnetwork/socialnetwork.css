@@ -6,7 +6,7 @@
     background: var(--white);
     border-radius: 999px;
     overflow: hidden;
-    justify-self: center;
+    width: fit-content;
     box-shadow: var(--shadow);
 }
 .media-separator {

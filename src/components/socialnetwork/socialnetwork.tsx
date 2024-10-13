@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import './socialnetwork.css';
 
@@ -24,12 +24,12 @@ export const SocialNetwork: React.FC<SocialNetworkProps> = ({ Icon, link, name }
 export const SocialNetworkList: React.FC<SocialNetworkListProps> = ({ networks }) => {
     return (
         <div className={"media-container"}>
-            {networks.map((network, index) => (<>
-                <SocialNetwork key={index} Icon={network.Icon} link={network.link} name={network.name} />
+            {networks.map((network, index) => (<Fragment key={index}>
+                <SocialNetwork Icon={network.Icon} link={network.link} name={network.name} />
                 {index < (networks.length - 1) &&
                     <hr className={'media-separator'} />
                 }
-            </>))}
+            </Fragment>))}
         </div>
     );
 }
