@@ -10,14 +10,13 @@ interface ContactProps {
         location: string;
         text: string;
     };
-    alt?: string;
 }
 
 interface ContactListProps {
     contacts: ContactProps[];
 }
 
-const Contact: React.FC<ContactProps> = ({ Icon, title, description, link }) => {
+export const Contact: React.FC<ContactProps> = ({ Icon, title, description, link }) => {
     return (<a href={link.location} className={'contact'} target="_blank" rel="noreferrer">
         <Icon className={'contact-icon'} />
         <div className={'contact-content'}>

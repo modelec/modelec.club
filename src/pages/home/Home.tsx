@@ -54,17 +54,17 @@ const Home: React.FC = () => {
           Un grand merci à nos partenaires qui nous soutiennent dans l'aventure et qui permettent à Modelec de continuer cette année encore.
         </p>
         <div className={'partners-list'}>
-          <a className={'partner'} target={'_blank'} href={'https://isen-nantes.fr'}>
-            <img className={'partner-logo'} src={'https://r2.modelec.club/isen.png'} alt={'ISEN Nantes'} />
-            <span className={'partner-name'}>ISEN Nantes</span>
+          <a className={'partners-partner'} target={'_blank'} href={'https://isen-nantes.fr'}>
+            <img className={'partners-partner-logo'} src={'https://r2.modelec.club/isen.png'} alt={'ISEN Nantes'} />
+            <span className={'partners-partner-name'}>ISEN Nantes</span>
           </a>
-          <a className={'partner'} target={'_blank'} href={'https://mercurycloud.fr'}>
-            <img className={'partner-logo'} src={'https://r2.modelec.club/mercurycloud.png'} alt={'Mercury Cloud'} />
-            <span className={'partner-name'}>Mercury Cloud</span>
+          <a className={'partners-partner'} target={'_blank'} href={'https://mercurycloud.fr'}>
+            <img className={'partners-partner-logo'} src={'https://r2.modelec.club/mercurycloud.png'} alt={'Mercury Cloud'} />
+            <span className={'partners-partner-name'}>Mercury Cloud</span>
           </a>
-          <a className={'partner'} target={'_blank'} href={'https://instagram.com/odyssey_bde'}>
-            <img className={'partner-logo'} src={'https://r2.modelec.club/bde.png'} alt={'BDE Odyssey'} />
-            <span className={'partner-name'}>BDE Odyssey</span>
+          <a className={'partners-partner'} target={'_blank'} href={'https://instagram.com/odyssey_bde'}>
+            <img className={'partners-partner-logo'} src={'https://r2.modelec.club/bde.png'} alt={'BDE Odyssey'} />
+            <span className={'partners-partner-name'}>BDE Odyssey</span>
           </a>
         </div>
         <div className={'partners-actions'}>

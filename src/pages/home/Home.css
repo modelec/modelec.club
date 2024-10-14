@@ -24,7 +24,7 @@
     gap: 3rem;
     flex-wrap: wrap;
 }
-.partner {
+.partners-partner {
     width: 92px;
     height: 92px;
     border-radius: 15px;
@@ -34,11 +34,11 @@
     align-items: center;
     position: relative;
 }
-.partner-logo {
+.partners-partner-logo {
     width: 100%;
     border-radius: 15px;
 }
-.partner-name {
+.partners-partner-name {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -50,7 +50,7 @@
     margin-top: 0.5rem;
     transition: color 0.3s;
 }
-.partner:hover .partner-name {
+.partners-partner:hover .partners-partner-name {
     color: var(--main);
 }
 .partners-actions {
