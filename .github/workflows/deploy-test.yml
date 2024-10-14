@@ -3,12 +3,12 @@ name: Deploy to server
 on:
   push:
     branches:
-      - main
+      - '**'
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: production
+    environment: recette
 
     steps:
       - name: Checkout code
@@ -35,4 +35,5 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           uploads: |
             ./dist => /var/www/modelec.club
+          dry-run: true
           delete: true
