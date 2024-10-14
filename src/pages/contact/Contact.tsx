@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
       <SocialNetworkList
         networks={[
           { Icon: Instagram, name: 'modelec_isen', link: 'https://www.instagram.com/modelec_isen' },
-          { Icon: Youtube, name: 'modelec', link: 'https://youtube.com/modelec' },
+          { Icon: Youtube, name: 'modelec', link: 'https://youtube.com/@modelec2165' },
           { Icon: Github, name: 'modelec', link: 'https://www.github.com/modelec' },
         ]}
       />

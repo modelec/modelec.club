@@ -35,8 +35,10 @@ export const Navbar = () => {
   const links = [
     { text: 'Accueil', link: '/' },
     { text: 'Projets', link: '/projets/' },
+      /*
     { text: 'Matériels', link: '/materiels/' },
     { text: 'Photos', link: '/photos/' },
+       */
     { text: 'Partenaires', link: '/partenaires/' },
     { text: 'Nous contacter', link: '/contact/' },
   ]

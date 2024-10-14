@@ -28,8 +28,10 @@ export const Footer: React.FC = () => {
             {[
               { text: 'Accueil', link: '/' },
               { text: 'Projets', link: '/projets/' },
+                /*
               { text: 'Matériels', link: '/materiels/' },
               { text: 'Photos', link: '/photos/' },
+                 */
               { text: 'Partenaires', link: '/partenaires/' },
               { text: 'Nous contacter', link: '/contact/' },
             ].map((link) => <FooterLink key={link.text} {...link} />)}
@@ -40,7 +42,7 @@ export const Footer: React.FC = () => {
           <div className={'footer-links'}>
             {[
               { text: 'Instagram', link: 'https://www.instagram.com/modelec_isen', target: '_blank' },
-              { text: 'Youtube', link: 'https://youtube.com/modelec', target: '_blank' },
+              { text: 'Youtube', link: 'https://youtube.com/@modelec2165', target: '_blank' },
               { text: 'Github', link: 'https://www.github.com/modelec', target: '_blank' },
               { text: 'Mail', link: 'mailto:contact@modelec.club', target: '_blank' },
             ].map((link) => <FooterLink key={link.text} {...link} />)}
