@@ -1,0 +1,62 @@
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+.contact {
+    padding: 2em;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 3em;
+    transition-duration: .3s;
+}
+.contact:hover {
+    scale: 1.05;
+}
+.contact-icon {
+    font-size: 20px;
+}
+.contact-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-description {
+    font-size: 14px;
+    color: var(--darkGray);
+}
+.contact-link {
+    margin-top: 2em;
+    padding: 0.5em 1em;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 999px;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.contact-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main);
+    transition-duration: .3s;
+    z-index: -1;
+    border-radius: 999px;
+}
+.contact:hover .contact-link::before {
+    width: 100%;
+}

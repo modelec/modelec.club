@@ -1,41 +1,35 @@
-import React from "react";
+import React, { Fragment } from "react";
+
+import './socialnetwork.css';
 
 interface SocialNetworkProps {
-    icon: string;
+    Icon: React.FC;
     link: string;
     name: string;
 }
 
-interface SocialNetworkSmallProps {
-    icon: string;
-    link: string;
-}
-
-interface SocialNetworksProps {
+interface SocialNetworkListProps {
     networks: SocialNetworkProps[];
 }
 
-const SocialNetwork: React.FC<SocialNetworkProps> = ({ icon, link, name }) => {
+export const SocialNetwork: React.FC<SocialNetworkProps> = ({ Icon, link, name }) => {
     return (
-        <a href={link} className={"social-network"} target="_blank" rel="noreferrer">
-            <img src={icon} alt={name}/>
-            <p className={"social-network-name"}>{name}</p>
+        <a href={link} className={"media-link"} target="_blank">
+            <Icon />
+            {name}
         </a>
     );
 }
 
-export const SocialNetworkSmall: React.FC<SocialNetworkSmallProps> = ({ icon, link }) => {
+export const SocialNetworkList: React.FC<SocialNetworkListProps> = ({ networks }) => {
     return (
-        <a href={link} className={"social-network-small"} target="_blank" rel="noreferrer">
-            <img src={icon} alt={link} className={"social-network-small-icon"}/>
-        </a>
-    );
-}
-
-export const SocialNetworks: React.FC<SocialNetworksProps> = ({ networks }) => {
-    return (
-        <div className={"social-networks"}>
-            {networks.map((network, index) => <SocialNetwork key={index} {...network} />)}
+        <div className={"media-container"}>
+            {networks.map((network, index) => (<Fragment key={index}>
+                <SocialNetwork Icon={network.Icon} link={network.link} name={network.name} />
+                {index < (networks.length - 1) &&
+                    <hr className={'media-separator'} />
+                }
+            </Fragment>))}
         </div>
     );
 }

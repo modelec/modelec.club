@@ -1,24 +1,34 @@
-import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import NotFound from './pages/404';
-import Partenaires from './pages/Partenaires';
-import Projets from './pages/Projets';
+import React from 'react';
+
+import './App.css';
+
+import { Navbar } from './layouts/navbar/navbar';
+import { Footer } from './layouts/footer/footer';
+
+import Home from './pages/home/Home';
+import NotFound from './pages/404/404';
+import Partenaires from './pages/partenaires/Partenaires';
+import Projets from './pages/projets/Projets';
+import Contact from './pages/contact/Contact';
 
 const App: React.FC = () => {
-  return (
+
+  return (<>
     <Router>
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/partenaires" element={<Partenaires />} />
-          <Route path="/projets" element={<Projets />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+      <Navbar />
+      <div className="page">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/partenaires" element={<Partenaires />} />
+            <Route path="/projets" element={<Projets />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
       </div>
+      <Footer />
     </Router>
-  );
+  </>);
 };
 
 export default App;

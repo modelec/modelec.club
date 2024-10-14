@@ -1,98 +1,92 @@
-import React, { useState, useEffect, useRef } from 'react';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import React from "react";
+
+import { NavArrowLeft, NavArrowRight } from "iconoir-react";
+
+import "./carousel.css";
 
 interface CarouselProps {
-    images: string[];
+    carousel: CarouselImageProps[];
 }
 
-interface CarouselClickablesProps {
-    images: string[];
-    links: string[];
+interface CarouselImageProps {
+    image: string;
+    title: string;
+    text: string;
+    link?: string;
+    alt?: string;
 }
 
-export const Carousel: React.FC<CarouselProps> = ({ images }) => {
-    const [currentImage, setCurrentImage] = useState(0);
+export const Carousel: React.FC<CarouselProps> = ({ carousel }) => {
+    const [currentIndex, setCurrentImage] = React.useState(0);
+    const [imagesSize, setImagesSize] = React.useState<number[]>([]);
+    const carouselSlider = React.useRef<HTMLDivElement>(null);
 
     const nextImage = () => {
-        setCurrentImage((currentImage + 1) % images.length);
+        setCurrentImage((currentIndex + 1) % carousel.length);
     }
 
     const previousImage = () => {
-        setCurrentImage((currentImage - 1 + images.length) % images.length);
+        setCurrentImage((currentIndex - 1 + carousel.length) % carousel.length);
+    }
+
+    React.useEffect(() => {
+        const interval = setTimeout(() => {
+            nextImage();
+        }, 3000);
+
+        if (carouselSlider.current) {
+            const translate = imagesSize.reduce((acc, size, index) => index < currentIndex ? acc + size : acc, 0);
+            const gap = 25; // TODO: Find a way to get this value (HARDCODED)
+            carouselSlider.current.style.translate = `-${translate+gap*currentIndex}px`;
+        }
+        
+        return () => clearInterval(interval);
+    }, [currentIndex, imagesSize, carouselSlider]);
+
+    function handleImageLoad(i: number, event: React.SyntheticEvent<HTMLImageElement>) {
+        setImagesSize((old) => {
+            const newSizes = [...old];
+            newSizes[i] = (event.target as HTMLImageElement).clientWidth;
+            return newSizes;
+        });
     }
 
     return (
         <div className={"carousel"}>
-            <div className={"carousel-image"}>
-                <img src={images[currentImage]} alt={"carousel"}/>
+            <div className={"carousel-wrapper"}>
+                <div className={"carousel-slider"} ref={carouselSlider}>
+                    {
+                        carousel.map((image, index) => (
+                            <div key={index} className={'slide'}>
+                                <img
+                                    key={index}
+                                    className={`slide-image ${index === currentIndex ? "active" : ""}`}
+                                    src={image.image}
+                                    alt={image.alt ?? "Image Carousel"}
+                                    onLoad={(e) => handleImageLoad(index, e)}
+                                />
+                                <div className={'slide-content'}>
+                                    <h3 className={'slide-title'}>{image.title}</h3>
+                                    <p className={'slide-text'}>{image.text}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-            <div className={"carousel-buttons"}>
-                <button onClick={previousImage}>Previous</button>
-                <button onClick={nextImage}>Next</button>
+            <div className="carousel-bar">
+                <button className={"carousel-button button_left"} onClick={previousImage}><NavArrowLeft /></button>
+                {
+                    carousel.map((_, index) => (
+                        <button
+                        key={index}
+                        className={`carousel-dot ${index === currentIndex ? "dot_active" : ""}`}
+                        onClick={() => setCurrentImage(index)}
+                        />
+                    ))
+                }
+                <button className={"carousel-button button_right"} onClick={nextImage}><NavArrowRight /></button>
             </div>
         </div>
     )
-}
-
-export const CarouselClickables: React.FC<CarouselClickablesProps> = ({ images, links }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [fade, setFade] = useState("fade-in");
-    const intervalRef = useRef<number | null>(null); // Store the interval ID
-
-    const resetInterval = () => {
-        if (intervalRef.current) {
-            clearInterval(intervalRef.current);
-        }
-        intervalRef.current = window.setInterval(() => {
-            handleNextImage();
-        }, 3000);
-    };
-
-    useEffect(() => {
-        resetInterval();
-
-        return () => {
-            if (intervalRef.current) {
-                clearInterval(intervalRef.current);
-            }
-        };
-    }, []);
-
-    const handleNextImage = () => {
-        setFade("fade-out");
-        setTimeout(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-            setFade("fade-in");
-        }, 500);
-        resetInterval();
-    };
-
-    const handlePreviousImage = () => {
-        setFade("fade-out");
-        setTimeout(() => {
-            setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-            setFade("fade-in");
-        }, 500);
-        resetInterval();
-    };
-
-    return (
-      <div className="carousel-container">
-          <ArrowBackIosNewIcon className="carousel-button" onClick={handlePreviousImage}/>
-          <div className="carousel-slide">
-              {images.map((image, index) => (
-                <a key={index} href={links[index]} target="_blank" rel="noopener noreferrer"
-                   hidden={index !== currentIndex}>
-                    <img
-                      src={image}
-                      alt={`Slide ${index}`}
-                      className={`carousel-image ${fade}`}
-                    />
-                </a>
-              ))}
-          </div>
-          <ArrowForwardIosIcon className="carousel-button" onClick={handleNextImage}/>
-      </div>
-    );
 };

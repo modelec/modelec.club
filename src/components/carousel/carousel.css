@@ -1,0 +1,107 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-slider {
+    display: flex;
+    gap: 25px;
+    position: relative;
+    padding-block: 1rem;
+    transition: translate 0.3s;
+}
+
+.slide {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+.slide-image {
+    display: block;
+    color: var(--darkGray);
+    font-size: 0.8rem;
+    transition: opacity 0.5s ease-in-out;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: 15px;
+}
+.slide-content {
+    padding: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.slide-title {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.slide-text {
+    font-size: 0.8rem;
+    color: var(--darkGray);
+    margin-bottom: 0.5rem;
+}
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray);
+    border: none;
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.carousel-image.fade-out {
+    opacity: 0;
+}
+
+.carousel-image.fade-in {
+    opacity: 1;
+}
+
+.carousel-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.carousel-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--gray);
+    cursor: pointer;
+    border: none;
+    transition: width .3s, background .3s;
+    &.dot_active { width: 24px; }
+    &:hover { background: var(--darkGray); }
+}
