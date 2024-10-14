@@ -26,6 +26,26 @@ jobs:
           npm ci
           npm run build
 
+      - name: Install http-server
+        run: npm install --save-dev http-server
+
+      - name: Start HTTP server
+        run: npx http-server ./dist -p 8080 &
+        env:
+          CI: true
+
+      - name: Run Cypress tests and Browserslist
+        run: npm run test
+        env:
+          CYPRESS_baseUrl: http://localhost:8080
+
+      - name: Upload Cypress screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
       - name: Copy build directory to server
         uses: Dylan700/sftp-upload-action@v1.2.3
         with:
