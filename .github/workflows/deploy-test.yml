@@ -1,0 +1,38 @@
+name: Deploy to server (dry-run)
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: recette
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Copy build directory to server
+        uses: Dylan700/sftp-upload-action@v1.2.3
+        with:
+          server: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT }}
+          uploads: |
+            ./dist => /var/www/modelec.club
+          dry-run: true
