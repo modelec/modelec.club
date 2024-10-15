@@ -1,4 +1,4 @@
-name: CodeQL Analysis
+name: "CodeQL"
 
 on:
   push:
@@ -6,9 +6,9 @@ on:
       - '**'
   pull_request:
     branches:
-      - '**'
+        - '**'
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 0'
 
 jobs:
   analyze:
@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
