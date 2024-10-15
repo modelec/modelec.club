@@ -1,4 +1,4 @@
-name: Deploy to server (dry-run)
+name: Unit test
 
 on:
   push:
