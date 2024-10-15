@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ScrollToTop } from './hooks/scrollToTop';
+//import { ScrollToTop } from './hooks/scrollToTop';
 import React from 'react';
 
 import './App.css';
@@ -20,7 +20,6 @@ const App: React.FC = () => {
         <Navbar />
         <div className="page">
           <Routes>
-            <ScrollToTop />
             <Route path="/" element={<Home />} />
             <Route path="/partenaires" element={<Partenaires />} />
             <Route path="/projets" element={<Projets />} />
