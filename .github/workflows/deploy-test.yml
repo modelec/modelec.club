@@ -56,4 +56,3 @@ jobs:
           uploads: |
             ./dist => /var/www/modelec.club
           dry-run: true
-          delete: true

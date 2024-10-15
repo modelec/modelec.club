@@ -1,6 +1,9 @@
 import React from 'react';
 import { ProjetsHeader } from '../../components/projetheader/projetheader';
-import { ProjectBigCard, ProjectSmallCard, } from '../../components/projectcard/projectcard.tsx';
+import {
+  ProjectBigCard,
+  ProjectSmallCard,
+} from '../../components/projectcard/projectcard';
 
 import './Projets.css';
 

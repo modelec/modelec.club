@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+//import { ScrollToTop } from './hooks/scrollToTop';
 import React from 'react';
 
 import './App.css';
@@ -13,11 +14,11 @@ import Projets from './pages/projets/Projets';
 import Contact from './pages/contact/Contact';
 
 const App: React.FC = () => {
-
-  return (<>
-    <Router>
-      <Navbar />
-      <div className="page">
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <div className="page">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/partenaires" element={<Partenaires />} />
@@ -25,10 +26,11 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-      </div>
-      <Footer />
-    </Router>
-  </>);
+        </div>
+        <Footer />
+      </Router>
+    </>
+  );
 };
 
 export default App;
