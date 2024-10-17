@@ -1,6 +1,5 @@
 import React from 'react';
 import { Timeline, TimelineProject } from '../../components/timeline/timeline';
-import './Projets.css';
 
 const Projets: React.FC = () => {
   return (
