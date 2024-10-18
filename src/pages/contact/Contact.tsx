@@ -13,7 +13,6 @@ import { SocialNetworkList } from '../../components/socialnetwork/socialnetwork'
 import { ContactList } from '../../components/contact/contact';
 import { Banner } from '../../components/banner/banner';
 
-import isen_group_photo from '../../assets/isen_group_photo.png';
 
 const Contact: React.FC = () => {
   return (
@@ -54,7 +53,7 @@ const Contact: React.FC = () => {
         ]}
       />
       <Banner
-        image={{ src: isen_group_photo, alt: "Photo de groupe à l'ISEN" }}
+        image={{ src: "https://r2.modelec.club/isen_group_photo.png", alt: "Photo de groupe à l'ISEN" }}
         header={'Une question ?'}
       >
         Vous avez une <b>question</b> vis-à-vis de notre <u>club</u> ou de l'un
