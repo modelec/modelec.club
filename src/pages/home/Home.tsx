@@ -131,22 +131,42 @@ const Home: React.FC = () => {
         <Carousel
           carousel={[
             {
-              image: 'https://picsum.photos/id/1/600/300',
+              image:
+                'https://r2.modelec.club/Selection%20site/IMG_20231027_221105.jpg',
               title: 'Lorem Ipsum',
               text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, vehicula justo.',
             },
             {
-              image: 'https://picsum.photos/id/2/600/300',
+              image:
+                'https://r2.modelec.club/Selection%20site/IMG_20231116_192517.jpg',
               title: 'Fusce et sem',
               text: 'Fusce et sem nec nunc luctus tincidunt. Nullam sit amet neque sed elit fermentum efficitur.',
             },
             {
-              image: 'https://picsum.photos/id/3/600/300',
+              image:
+                'https://r2.modelec.club/Selection%20site/IMG_20240131_170511.jpg',
               title: 'Vestibulum',
               text: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut nec turpis.',
             },
             {
-              image: 'https://picsum.photos/id/4/600/300',
+              image:
+                'https://r2.modelec.club/Selection%20site/IMG_20240326_103107.jpg',
+              title: 'Pellentesque',
+              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+            },
+            {
+              image: 'https://r2.modelec.club/Selection%20site/IMG_2045.jpg',
+              title: 'Pellentesque',
+              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+            },
+            {
+              image: 'https://r2.modelec.club/Selection%20site/IMG_2122.jpg',
+              title: 'Pellentesque',
+              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+            },
+            {
+              image:
+                'https://r2.modelec.club/Selection%20site/PXL_20230921_121403004.TS_exported_1603_1695303828223.jpg',
               title: 'Pellentesque',
               text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
             },
