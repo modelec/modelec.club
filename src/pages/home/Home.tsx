@@ -193,7 +193,7 @@ const Home: React.FC = () => {
                 {
                   name: 'Arthur Grossmann-Le Mauguen',
                   role: 'Evenementiel',
-                  image: 'https://r2.modelec.club/maxime.png',
+                  image: 'https://r2.modelec.club/arthur.png',
                 },
                 {
                   name: 'Allan Cueff',
