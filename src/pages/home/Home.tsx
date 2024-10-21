@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           {
             Icon: Youtube,
             name: 'modelec',
-            link: 'https://youtube.com/modelec',
+            link: 'https://www.youtube.com/@modelec2165',
           },
           {
             Icon: Github,
