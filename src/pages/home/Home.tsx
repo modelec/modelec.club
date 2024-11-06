@@ -208,7 +208,7 @@ const Home: React.FC = () => {
                 {
                   name: 'Cléo Sionville',
                   role: 'Communication',
-                  image: 'https://r2.modelec.club/maxime.png',
+                  image: 'https://r2.modelec.club/cleo.jpg',
                 },
                 {
                   name: 'Arthur Grossmann-Le Mauguen',
