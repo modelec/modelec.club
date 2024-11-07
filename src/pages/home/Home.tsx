@@ -188,7 +188,7 @@ const Home: React.FC = () => {
                 {
                   name: 'Vincent Rocher',
                   role: 'Vice-Président',
-                  image: 'https://r2.modelec.club/maxime.png',
+                  image: 'https://r2.modelec.club/vincent.jpg',
                 },
                 {
                   name: 'Felix Marquet',
@@ -198,7 +198,7 @@ const Home: React.FC = () => {
                 {
                   name: 'Florent Butery',
                   role: 'Trésorier',
-                  image: 'https://r2.modelec.club/maxime.png',
+                  image: 'https://r2.modelec.club/flo.jpg',
                 },
               ],
             },
