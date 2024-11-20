@@ -1,7 +1,7 @@
 import React from 'react';
-import { ContactList } from './contact';
+import { ContactList } from '../../src/components/contact/contact';
 import { Handbag } from 'iconoir-react';
-import './contact.css';
+import '../../src/components/contact/contact.css';
 
 describe('<ContactList />', () => {
   it('renders the ContactList component correctly', () => {

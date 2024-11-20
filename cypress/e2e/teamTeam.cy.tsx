@@ -1,6 +1,6 @@
 import React from 'react';
-import { Team } from './team';
-import './team.css';
+import { Team } from '../../src/components/team/team';
+import '../../src/components/team/team.css';
 
 describe('<Team />', () => {
   it('renders the team with groups and members', () => {

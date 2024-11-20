@@ -1,8 +1,8 @@
 import React from 'react';
-import { Navbar } from './navbar';
+import { Navbar } from '../../src/layouts/navbar/navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
-import '../../App.css';
-import './navbar.css';
+import '../../src/App.css';
+import '../../src/layouts/navbar/navbar.css';
 
 describe('<Navbar />', () => {
   it('renders the Navbar component correctly', () => {

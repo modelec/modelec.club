@@ -1,7 +1,7 @@
-import './banner.css';
-import '../../App.css';
+import '../../src/components/banner/banner.css';
+import '../../src/App.css';
 import React from 'react';
-import { Banner } from './banner';
+import { Banner } from '../../src/components/banner/banner';
 
 describe('<Banner />', () => {
   it('renders the first Banner component correctly', () => {

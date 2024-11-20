@@ -1,6 +1,6 @@
 import React from 'react';
-import { TimelineProject } from './timeline';
-import './timeline.css';
+import { TimelineProject } from '../../src/components/timeline/timeline';
+import '../../src/components/timeline/timeline.css';
 
 describe('<TimelineProject />', () => {
   it('renders the TimelineProject component correctly', () => {

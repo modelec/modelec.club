@@ -1,6 +1,6 @@
 import React from 'react';
-import { Partner } from './partner';
-import './partner.css';
+import { Partner } from '../../src/components/partner/partner';
+import '../../src/components/partner/partner.css';
 
 describe('<Partner />', () => {
   it('renders ISEN partenaire', () => {

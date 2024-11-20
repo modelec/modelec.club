@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box } from './box';
-import './box.css';
+import { Box } from '../../src/components/box/box';
+import '../../src/components/box/box.css';
 
 describe('<Box />', () => {
   it('renders the first box', () => {

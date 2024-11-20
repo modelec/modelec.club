@@ -1,6 +1,6 @@
 import React from 'react';
-import { Carousel } from './carousel';
-import './carousel.css';
+import { Carousel } from '../../src/components/carousel/carousel';
+import '../../src/components/carousel/carousel.css';
 
 describe('<Carousel />', () => {
   it('renders the carousel with images and text', () => {

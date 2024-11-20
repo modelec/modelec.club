@@ -1,6 +1,6 @@
 import React from 'react';
-import { SocialNetworkList } from './socialnetwork';
-import './socialnetwork.css';
+import { SocialNetworkList } from '../../src/components/socialnetwork/socialnetwork';
+import '../../src/components/socialnetwork/socialnetwork.css';
 import { FaInstagram, FaYoutube, FaGithub } from 'react-icons/fa';
 
 describe('<SocialNetworkList />', () => {
