@@ -12,13 +12,51 @@ const Projets: React.FC = () => {
           <>
             Cette année encore, nous participons à la{' '}
             <u>Coupe de France de Robotique</u> pour notre{' '}
-            <b>deuxième participation</b> !
+            <b>deuxième participation</b> ! Nous sommes motivés 
+            pour faire mieux que l'année dernière avec un robot
+            tout neuf, plus performant, plus fiable et plus autonome.
           </>,
         ]}
       />
       <h1 className={'page-title'}>Remonter dans le Temps</h1>
       <Timeline
         projects={[
+          {
+            title: 'Marcel : Notre futur robot',
+            date: '2025',
+            paragraphs: [
+              <>
+                Nous avons commencé le travail pour fabriquer un{' '}
+                <b>nouveau robot principal</b> en repartant presque de zéro.
+              </>,
+              <>
+                Marcel sera composé de nouveaux PCB avec des composants plus 
+                haut de gamme. Il aura un chassis en aluminium plus modulable.
+                Il sera aussi plus intelligent avec des algorithmes de
+                pathfinding et de prise de décision.
+              </>,
+              <>
+                Les actionneurs de Marcel seront à la fois astucieux et audacieux !
+                Nous comptons bien impressionner par l'originalité et la fiabilité
+                de nos futurs actionneurs, actuellement en cours de test.
+              </>,
+            ],
+            cards: [
+
+              {
+                type: 'image',
+                src: 'TODO',
+                alt: 'Vue de face de Marcel',
+                fit: 'cover',
+              },
+              {
+                type: 'image',
+                src: 'TODO',
+                alt: 'Vue de dos de Marcel',
+                fit: 'cover',
+              },
+            ],
+          },
           {
             title: 'Digitalisation du bureau',
             date: '2024',
@@ -29,6 +67,7 @@ const Projets: React.FC = () => {
               </>,
             ],
             cards: [
+
               {
                 type: 'image',
                 src: 'https://r2.modelec.club/Bureau/IMG_3881.PNG',
