@@ -45,14 +45,14 @@ const Projets: React.FC = () => {
 
               {
                 type: 'image',
-                src: 'TODO',
-                alt: 'Vue de face de Marcel',
+                src: 'https://r2.modelec.club/MARCEL/front.PNG',
+                alt: 'Vue de face de Marcel en 3D',
                 fit: 'cover',
               },
               {
                 type: 'image',
-                src: 'TODO',
-                alt: 'Vue de dos de Marcel',
+                src: 'https://r2.modelec.club/MARCEL/back-line.PNG',
+                alt: 'Vue de dos de Marcel en 3D',
                 fit: 'cover',
               },
             ],
