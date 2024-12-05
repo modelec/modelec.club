@@ -133,42 +133,37 @@ const Home: React.FC = () => {
             {
               image:
                 'https://r2.modelec.club/Selection%20site/IMG_20231027_221105.jpg',
-              title: 'Lorem Ipsum',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, vehicula justo.',
-            },
-            {
-              image:
-                'https://r2.modelec.club/Selection%20site/IMG_20231116_192517.jpg',
-              title: 'Fusce et sem',
-              text: 'Fusce et sem nec nunc luctus tincidunt. Nullam sit amet neque sed elit fermentum efficitur.',
-            },
-            {
-              image:
-                'https://r2.modelec.club/Selection%20site/IMG_20240131_170511.jpg',
-              title: 'Vestibulum',
-              text: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut nec turpis.',
+              title: 'Drone hexacoptère',
+              text: 'Le drone hexacoptère a été le premier projet du club robotique de l\'ISEN Nantes : l\'iRobot\'Eam. Il est pilotable et conçu pour soupporter des charges lourdes.',
             },
             {
               image:
                 'https://r2.modelec.club/Selection%20site/IMG_20240326_103107.jpg',
-              title: 'Pellentesque',
-              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+              title: 'Petits projets',
+              text: 'Le club est un espace de réalisation pour les projets personnels des élèves mais aussi pour des petits projets de club comme des éléments décoratifs, un robot qui joue au bier pong, un stand photo pour les soirées, etc.',
             },
             {
-              image: 'https://r2.modelec.club/Selection%20site/IMG_2045.jpg',
-              title: 'Pellentesque',
-              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+              image:
+                'https://r2.modelec.club/Selection%20site/IMG_20240131_170511.jpg',
+              title: 'Electronique',
+              text: 'Nous concevons nos propres circuits électroniques aux fonctionnalités multiples (gestion de l\'alimentation, pilotage des actionneurs et des moteurs, etc) afin de les intégrer dans notre robot',
+            },
+            {
+              image:
+                'https://r2.modelec.club/Selection%20site/IMG_2045.jpg',
+              title: 'Programmation',
+              text: 'Nous programmons nos robots en arduino, C et C++. Nous allons utiliser ROS en 2025. Nous développons des algorithmes du simple composant pour piloter des moteurs pas à pas aux algorithmes de prise de décision en passant par des correcteurs PID.',
             },
             {
               image: 'https://r2.modelec.club/Selection%20site/IMG_2122.jpg',
-              title: 'Pellentesque',
-              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+              title: 'Manipulations',
+              text: 'Au sein de notre club les étudiants réalisent des soudures, ils peuvent bricoler avec l\'outillage ou expérimenter avec des composants électroniques appartenants au club et mis à disposition de tous. ',
             },
             {
               image:
                 'https://r2.modelec.club/Selection%20site/PXL_20230921_121403004.TS_exported_1603_1695303828223.jpg',
-              title: 'Pellentesque',
-              text: 'Pellentesque habitant morbi tristique sen et netus et malesuada fames ac turpis egestas.',
+              title: 'Présentations',
+              text: 'Nous présentons nos projets aux étudiants de l\'école lors du forum des clubs ou des portes ouvertes, nous participons aussi à des salons de makers. Nous avons aussi pour objectif de proposer des visites en milieux industriels aux élèves de l\'ISEN.',
             },
           ]}
         />
