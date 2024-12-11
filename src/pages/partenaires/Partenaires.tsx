@@ -29,7 +29,7 @@ const Partenaires: React.FC = () => {
             <>
               MercuryCloud est un hébergeur web, de vps ainsi que de serveur de
               jeu. Ils nous mettent à disposition un vps pour de la compilation
-              et pour héberger certains service dont ce site web.
+              et pour héberger certains services dont ce site web et notre outil de gestion de projet.
             </>,
           ]}
           photos={['https://r2.modelec.club/MercuryCloud.jpg']}
