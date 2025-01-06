@@ -22,7 +22,7 @@ const Projets: React.FC = () => {
       <Timeline
         projects={[
           {
-            title: 'Marcel : Notre futur robot',
+            title: 'Marcel : Notre nouveau robot',
             date: '2025',
             paragraphs: [
               <>
@@ -30,15 +30,15 @@ const Projets: React.FC = () => {
                 <b>nouveau robot principal</b> en repartant presque de zéro.
               </>,
               <>
-                Marcel sera composé de nouveaux PCB avec des composants plus 
-                haut de gamme. Il aura un chassis en aluminium plus modulable.
-                Il sera aussi plus intelligent avec des algorithmes de
-                pathfinding et de prise de décision.
+                Marcel sera composé de nouvelles cartes électroniques avec
+                des composants plus haut de gamme. Il aura un chassis
+                en aluminium plus modulable. Enfin, il sera aussi plus intelligent,
+                avec des algorithmes de pathfinding et de prise de décision.
               </>,
               <>
                 Les actionneurs de Marcel seront à la fois astucieux et audacieux !
                 Nous comptons bien impressionner par l'originalité et la fiabilité
-                de nos futurs actionneurs, actuellement en cours de test.
+                de nos futurs actionneurs, qui sont actuellement en cours de test.
               </>,
             ],
             cards: [
@@ -58,13 +58,33 @@ const Projets: React.FC = () => {
             ],
           },
           {
-            title: 'Digitalisation du bureau',
+            title: 'Inauguration du bureau',
             date: '2024',
             paragraphs: [
               <>
-                Afin de faciliter la gestion du club, nous avons décidé de{' '}
-                <b>digitaliser</b> le <b>bureau</b>.
+                Lors de cette rentrée en septembre 2024, nous avons, en partie
+                grâce à notre bon résultat à la Coupe de France de Robotique,
+                pu emménager dans un nouveau bureau juste pour nous !
+                Un évènement pour notre club et notre école, car depuis,
+                d'autres clubs ont suivi et nous disposons maintenant d'un beau
+                couloir dédié aux activités étudiantes et associatives au sein de l'école.
               </>,
+              <>
+                Afin de faciliter la gestion du club, nous avons décidé de{' '}
+                <b>digitaliser</b> le <b>bureau</b>. Nous avons rendu notre imprimante 3D
+                pilotable à distance et nous pouvons la surveiller à l'aide d'une webcam.
+                Nous avons également développé ce site web et mis en place une plateforme
+                de gestion de projet en mode Agile pour que nos membres puissent suivre
+                l'avancement du projet et collaborer plus efficacement.
+              </>,
+              <>
+                Enfin, nous avons ajouté des fonctionnalités au robot. En plus de
+                la possibilité de pilotage par manette très appréciée lors de nos
+                démonstrations, notre robot est aussi désormais accessible depuis
+                le VPN Modelec pour permettre à nos membres de travailler dessus
+                depuis n'importe où dans le monde ! Nous avons ainsi une
+                équipe de jour en France et une équipe de nuit au Canada !
+              </>
             ],
             cards: [
 
@@ -97,21 +117,23 @@ const Projets: React.FC = () => {
                 <b>2 bras d'orientation</b> pour les panneaux solaires. Il est
                 également équipé d'<b>une caméra</b> pour la vision et d'
                 <b>un LiDAR</b> pour la détection d'adversaire et la
-                triangulation.
+                triangulation par rapport aux balises fixes.
               </>,
               <>
                 Coté <u>Hardware</u>, il est géré par un <b>Raspberry Pi 5</b>{' '}
-                et un <b>Arduino Mega</b>.
+                qui gère toute la stratégie et un <b>Arduino Mega</b> qui gère le
+                déplacement en pilotant les moteurs et en le mesurant à l'aide de
+                roues codeuses.
               </>,
               <>
-                Côté <u>Software</u>, il est géré par des programmes <b>C++</b>{' '}
-                faits sur mesure dont le code est disponible sur notre Github.
+                Côté <u>Software</u>, nos programmes sont codés en <b>C++</b>{' '},
+                ils sont fait maison et le code est disponible sur notre Github !
               </>,
               <>
                 Serge n'est pas seul, il est accompagné de <u>2 Pixels</u>, ses{' '}
-                <b>Partie Autonome Mobile Intelligente</b> ou <u>PAMI</u> qui
+                <b>Petits Actionneurs Mobile Intelligents</b> ou <u>PAMI</u> qui
                 sont des robots autonomes gérés par des <b>Arduino Uno</b> qui
-                peuvent se déplacer et se repérer dans l'espace.
+                peuvent se déplacer, se repérer dans l'espace et éviter les obstacles.
               </>,
             ],
             cards: [
@@ -128,12 +150,12 @@ const Projets: React.FC = () => {
             ],
           },
           {
-            title: 'PAMI v1',
+            title: 'Pixel v1 (PAMI)',
             date: '2024',
             paragraphs: [
               <>
                 Les <b>PAMI v1</b> sont des <b>robots autonomes</b> qui peuvent
-                se déplacer et se repérer dans l'espace.
+                se déplacer, se repérer dans l'espace et éviter les obstacles.
               </>,
               <>
                 Ils sont gérés par des <b>Arduino Uno</b>.
