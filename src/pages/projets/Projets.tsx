@@ -131,7 +131,7 @@ const Projets: React.FC = () => {
               </>,
               <>
                 Serge n'est pas seul, il est accompagné de <u>2 Pixels</u>, ses{' '}
-                <b>Petits Actionneurs Mobile Intelligents</b> ou <u>PAMI</u> qui
+                <b>Petits Actionneurs Mobiles Intelligents</b> ou <u>PAMI</u> qui
                 sont des robots autonomes gérés par des <b>Arduino Uno</b> qui
                 peuvent se déplacer, se repérer dans l'espace et éviter les obstacles.
               </>,
