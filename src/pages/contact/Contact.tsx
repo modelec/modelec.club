@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
           {
             Icon: Youtube,
             name: 'modelec',
-            link: 'https://youtube.com/@modelec2165',
+            link: 'https://www.youtube.com/@Modelec-ISEN',
           },
           {
             Icon: Github,
