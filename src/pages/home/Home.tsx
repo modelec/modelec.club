@@ -94,6 +94,18 @@ const Home: React.FC = () => {
           <a
             className={'partners-partner'}
             target={'_blank'}
+            href={'https://www.tracopower.com/fr/fra'}
+          >
+            <img
+              className={'partners-partner-logo'}
+              src={'https://r2.modelec.club/tracopower.jpeg'}
+              alt={'Traco Power'}
+            />
+            <span className={'partners-partner-name'}>Traco Power</span>
+          </a>
+          <a
+            className={'partners-partner'}
+            target={'_blank'}
             href={'https://mercurycloud.fr'}
           >
             <img
@@ -134,7 +146,7 @@ const Home: React.FC = () => {
               image:
                 'https://r2.modelec.club/Selection%20site/IMG_20231027_221105.jpg',
               title: 'Drone hexacoptère',
-              text: 'Le drone hexacoptère a été le premier projet du club robotique de l\'ISEN Nantes : l\'iRobot\'Eam. Il est pilotable et conçu pour soupporter des charges lourdes.',
+              text: "Le drone hexacoptère a été le premier projet du club robotique de l'ISEN Nantes : l'iRobot'Eam. Il est pilotable et conçu pour soupporter des charges lourdes.",
             },
             {
               image:
@@ -146,24 +158,23 @@ const Home: React.FC = () => {
               image:
                 'https://r2.modelec.club/Selection%20site/IMG_20240131_170511.jpg',
               title: 'Electronique',
-              text: 'Nous concevons nos propres circuits électroniques aux fonctionnalités multiples (gestion de l\'alimentation, pilotage des actionneurs et des moteurs, etc) afin de les intégrer dans notre robot',
+              text: "Nous concevons nos propres circuits électroniques aux fonctionnalités multiples (gestion de l'alimentation, pilotage des actionneurs et des moteurs, etc) afin de les intégrer dans notre robot",
             },
             {
-              image:
-                'https://r2.modelec.club/Selection%20site/IMG_2045.jpg',
+              image: 'https://r2.modelec.club/Selection%20site/IMG_2045.jpg',
               title: 'Programmation',
               text: 'Nous programmons nos robots en arduino, C et C++. Nous allons utiliser ROS en 2025. Nous développons des algorithmes du simple composant pour piloter des moteurs pas à pas aux algorithmes de prise de décision en passant par des correcteurs PID.',
             },
             {
               image: 'https://r2.modelec.club/Selection%20site/IMG_2122.jpg',
               title: 'Manipulations',
-              text: 'Au sein de notre club les étudiants réalisent des soudures, ils peuvent bricoler avec l\'outillage ou expérimenter avec des composants électroniques appartenants au club et mis à disposition de tous. ',
+              text: "Au sein de notre club les étudiants réalisent des soudures, ils peuvent bricoler avec l'outillage ou expérimenter avec des composants électroniques appartenants au club et mis à disposition de tous. ",
             },
             {
               image:
                 'https://r2.modelec.club/Selection%20site/PXL_20230921_121403004.TS_exported_1603_1695303828223.jpg',
               title: 'Présentations',
-              text: 'Nous présentons nos projets aux étudiants de l\'école lors du forum des clubs ou des portes ouvertes, nous participons aussi à des salons de makers. Nous avons aussi pour objectif de proposer des visites en milieux industriels aux élèves de l\'ISEN.',
+              text: "Nous présentons nos projets aux étudiants de l'école lors du forum des clubs ou des portes ouvertes, nous participons aussi à des salons de makers. Nous avons aussi pour objectif de proposer des visites en milieux industriels aux élèves de l'ISEN.",
             },
           ]}
         />
