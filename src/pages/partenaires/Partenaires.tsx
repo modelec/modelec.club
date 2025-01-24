@@ -23,13 +23,32 @@ const Partenaires: React.FC = () => {
           link={'https://isen-nantes.fr'}
         />
         <Partner
+          name={'Traco Power'}
+          logo={
+            'https://r2.modelec.club/Traco_Logo_sur_2_lignes-removebg-preview.png'
+          }
+          texts={[
+            <>
+              Traco Power est un fournisseur reconnu de solutions d'alimentation
+              innovantes et fiables. Ils nous ont généreusement fourni des
+              composants essentiels pour notre PCB d'alimentation, garantissant
+              des performances optimales et une efficacité énergétique élevée.
+              Leur expertise et leur qualité de fabrication jouent un rôle clé
+              dans la réussite de nos projets électroniques.
+            </>,
+          ]}
+          photos={['https://r2.modelec.club/Partenariat_Traco.png']}
+          link={'https://www.tracopower.com/fr/fra'}
+        />
+        <Partner
           name={'MercuryCloud'}
           logo={'https://r2.modelec.club/mercurycloud.png'}
           texts={[
             <>
               MercuryCloud est un hébergeur web, de vps ainsi que de serveur de
               jeu. Ils nous mettent à disposition un vps pour de la compilation
-              et pour héberger certains services dont ce site web et notre outil de gestion de projet.
+              et pour héberger certains services dont ce site web et notre outil
+              de gestion de projet.
             </>,
           ]}
           photos={['https://r2.modelec.club/MercuryCloud.jpg']}
