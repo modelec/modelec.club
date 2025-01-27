@@ -25,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "@testing-library/react": "^16.0.1",
+    "@testing-library/react": "^16.2.0",
     "browserslist": "^4.24.3",
     "browserslist-useragent": "^4.0.0",
     "cypress": "^13.16.1",
