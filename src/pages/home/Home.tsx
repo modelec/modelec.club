@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import { Github, Youtube, Instagram, BookmarkBook } from 'iconoir-react';
 
@@ -84,7 +85,7 @@ const Home: React.FC = () => {
             target={'_blank'}
             href={'https://isen-nantes.fr'}
           >
-            <img
+            <LazyLoadImage
               className={'partners-partner-logo'}
               src={'https://r2.modelec.club/isen.png'}
               alt={'ISEN Nantes'}
@@ -96,7 +97,7 @@ const Home: React.FC = () => {
             target={'_blank'}
             href={'https://www.tracopower.com/fr/fra'}
           >
-            <img
+            <LazyLoadImage
               className={'partners-partner-logo'}
               src={'https://r2.modelec.club/tracopower.jpeg'}
               alt={'Traco Power'}
@@ -108,7 +109,7 @@ const Home: React.FC = () => {
             target={'_blank'}
             href={'https://mercurycloud.fr'}
           >
-            <img
+            <LazyLoadImage
               className={'partners-partner-logo'}
               src={'https://r2.modelec.club/mercurycloud.png'}
               alt={'Mercury Cloud'}
@@ -120,7 +121,7 @@ const Home: React.FC = () => {
             target={'_blank'}
             href={'https://instagram.com/odyssey_bde'}
           >
-            <img
+            <LazyLoadImage
               className={'partners-partner-logo'}
               src={'https://r2.modelec.club/bde.png'}
               alt={'BDE Odyssey'}
