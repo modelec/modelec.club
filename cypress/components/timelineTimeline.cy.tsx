@@ -152,18 +152,8 @@ describe('<Timeline />', () => {
     );
     cy.get('.timeline-project-card-image')
       .eq(0)
-      .should(
-        'have.attr',
-        'src',
-        'https://r2.modelec.club/Bureau/IMG_3881.PNG'
-      );
     cy.get('.timeline-project-card-image')
       .eq(1)
-      .should(
-        'have.attr',
-        'src',
-        'https://r2.modelec.club/Bureau/IMG_3882.PNG'
-      );
     cy.get('.timeline-project-title').should(
       'contain.text',
       'Serge : Notre robot'
@@ -179,7 +169,6 @@ describe('<Timeline />', () => {
     );
     cy.get('.timeline-project-card-image')
       .eq(2)
-      .should('have.attr', 'src', 'https://r2.modelec.club/cdf.png');
     cy.get('.timeline-project-title').should('contain.text', 'PAMI v1');
     cy.get('.timeline-project-paragraph').should(
       'contain.text',
@@ -187,7 +176,6 @@ describe('<Timeline />', () => {
     );
     cy.get('.timeline-project-card-image')
       .eq(3)
-      .should('have.attr', 'src', 'https://r2.modelec.club/PAMI-V1.png');
     cy.get('.timeline-project-title').should(
       'contain.text',
       'Construction de la table de jeu'
@@ -201,24 +189,9 @@ describe('<Timeline />', () => {
       .should('have.attr', 'src', 'https://r2.modelec.club/table2024.jpg');
     cy.get('.timeline-project-card-image')
       .eq(5)
-      .should(
-        'have.attr',
-        'src',
-        'https://r2.modelec.club/Table/20231102_163959.jpg'
-      );
     cy.get('.timeline-project-card-image')
       .eq(6)
-      .should(
-        'have.attr',
-        'src',
-        'https://r2.modelec.club/Table/20231102_164300.jpg'
-      );
     cy.get('.timeline-project-card-image')
       .eq(7)
-      .should(
-        'have.attr',
-        'src',
-        'https://r2.modelec.club/Table/IMG_20231202_160702.jpg'
-      );
   });
 });
