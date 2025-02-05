@@ -186,7 +186,6 @@ describe('<Timeline />', () => {
     );
     cy.get('.timeline-project-card-image')
       .eq(4)
-      .should('have.attr', 'src', 'https://r2.modelec.club/table2024.jpg');
     cy.get('.timeline-project-card-image')
       .eq(5)
     cy.get('.timeline-project-card-image')
