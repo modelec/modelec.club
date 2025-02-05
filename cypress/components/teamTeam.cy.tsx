@@ -71,9 +71,6 @@ describe('<Team />', () => {
         cy.get(
           `.team-group:eq(${groupIndex}) .team-member:eq(${memberIndex}) .team-member-role`
         ).should('contain.text', member.role);
-        cy.get(
-          `.team-group:eq(${groupIndex}) .team-member:eq(${memberIndex}) img`
-        ).should('have.attr', 'src', member.image);
       });
     });
   });

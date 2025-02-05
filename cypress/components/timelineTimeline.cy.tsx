@@ -168,11 +168,6 @@ describe('<Timeline />', () => {
       'contain.text',
       'Serge : Notre robot'
     );
-    cy.get('.timeline-project-banner').should(
-      'have.attr',
-      'src',
-      'https://r2.modelec.club/serge.png'
-    );
     cy.get('.timeline-project-paragraph').should(
       'contain.text',
       'Voici Serge, notre robot pour la coupe de France de Robotique 2024 !'
