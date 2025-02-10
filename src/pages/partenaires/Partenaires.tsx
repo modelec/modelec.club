@@ -10,7 +10,7 @@ const Partenaires: React.FC = () => {
       <div className={'partner-list'}>
         <Partner
           name={'ISEN Nantes'}
-          logo={'https://r2.modelec.club/isen.png'}
+          logo={'/assets//isen.png'}
           texts={[
             <>
               L'ISEN Nantes est une école d'ingénieurs généraliste en 5 ans.
@@ -19,13 +19,13 @@ const Partenaires: React.FC = () => {
               disposition un local pour travailler sur nos projets.
             </>,
           ]}
-          photos={['https://r2.modelec.club/ISEN-2.jpg']}
+          photos={['/assets//ISEN-2.jpg']}
           link={'https://isen-nantes.fr'}
         />
         <Partner
           name={'Traco Power'}
           logo={
-            'https://r2.modelec.club/Traco_Logo_sur_2_lignes-removebg-preview.png'
+            '/assets//Traco_Logo_sur_2_lignes-removebg-preview.png'
           }
           texts={[
             <>
@@ -37,12 +37,12 @@ const Partenaires: React.FC = () => {
               dans la réussite de nos projets électroniques.
             </>,
           ]}
-          photos={['https://r2.modelec.club/Partenariat_Traco.png']}
+          photos={['/assets//Partenariat_Traco.png']}
           link={'https://www.tracopower.com/fr/fra'}
         />
         <Partner
           name={'MercuryCloud'}
-          logo={'https://r2.modelec.club/mercurycloud.png'}
+          logo={'/assets//mercurycloud.png'}
           texts={[
             <>
               MercuryCloud est un hébergeur web, de vps ainsi que de serveur de
@@ -51,12 +51,12 @@ const Partenaires: React.FC = () => {
               de gestion de projet.
             </>,
           ]}
-          photos={['https://r2.modelec.club/MercuryCloud.jpg']}
+          photos={['/assets//MercuryCloud.jpg']}
           link={'https://mercurycloud.fr/aff.php?aff=14'}
         />
         <Partner
           name={'Odyssey BDE'}
-          logo={'https://r2.modelec.club/bde.png'}
+          logo={'/assets//bde.png'}
           texts={[
             <>
               Le BDE de l'ISEN Nantes, Odyssey, est un partenaire de longue
@@ -64,7 +64,7 @@ const Partenaires: React.FC = () => {
               nous soutiennent dans nos projets.
             </>,
           ]}
-          photos={['https://r2.modelec.club/Odyseey.JPEG']}
+          photos={['/assets//Odyseey.JPEG']}
           link={'https://instagram.com/odyssey_bde'}
         />
       </div>

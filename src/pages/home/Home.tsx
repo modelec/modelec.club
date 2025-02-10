@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     <>
       <Banner
         image={{
-          src: 'https://r2.modelec.club/coupe-2024.png',
+          src: '/assets//coupe-2024.png',
           alt: 'Modelec Photo',
         }}
         header={'Qui sommes-nous ?'}
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           elements={[
             {
               type: 'image',
-              src: 'https://r2.modelec.club/serge-pixel.png',
+              src: '/assets/serge-pixel.png',
               alt: 'Serge Pixel',
             },
             { type: 'data', data: '14e', subtext: '/82 équipes' },
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
           >
             <LazyLoadImage
               className={'partners-partner-logo'}
-              src={'https://r2.modelec.club/isen.png'}
+              src={'/assets/isen.png'}
               alt={'ISEN Nantes'}
             />
             <span className={'partners-partner-name'}>ISEN Nantes</span>
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
           >
             <LazyLoadImage
               className={'partners-partner-logo'}
-              src={'https://r2.modelec.club/tracopower.jpeg'}
+              src={'/assets/tracopower.jpeg'}
               alt={'Traco Power'}
             />
             <span className={'partners-partner-name'}>Traco Power</span>
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
           >
             <LazyLoadImage
               className={'partners-partner-logo'}
-              src={'https://r2.modelec.club/mercurycloud.png'}
+              src={'/assets/mercurycloud.png'}
               alt={'Mercury Cloud'}
             />
             <span className={'partners-partner-name'}>Mercury Cloud</span>
@@ -123,7 +123,7 @@ const Home: React.FC = () => {
           >
             <LazyLoadImage
               className={'partners-partner-logo'}
-              src={'https://r2.modelec.club/bde.png'}
+              src={'/assets//bde.png'}
               alt={'BDE Odyssey'}
             />
             <span className={'partners-partner-name'}>BDE Odyssey</span>
@@ -145,35 +145,35 @@ const Home: React.FC = () => {
           carousel={[
             {
               image:
-                'https://r2.modelec.club/Selection%20site/IMG_20231027_221105.jpg',
+                '/assets/Selection site_IMG_20231027_221105.jpg',
               title: 'Drone hexacoptère',
               text: "Le drone hexacoptère a été le premier projet du club robotique de l'ISEN Nantes : l'iRobot'Eam. Il est pilotable et conçu pour soupporter des charges lourdes.",
             },
             {
               image:
-                'https://r2.modelec.club/Selection%20site/IMG_20240326_103107.jpg',
+                '/assets/Selection site_IMG_20240326_103107.jpg',
               title: 'Petits projets',
               text: 'Le club est un espace de réalisation pour les projets personnels des élèves mais aussi pour des petits projets de club comme des éléments décoratifs, un robot qui joue au bier pong, un stand photo pour les soirées, etc.',
             },
             {
               image:
-                'https://r2.modelec.club/Selection%20site/IMG_20240131_170511.jpg',
+                '/assets/Selection site_IMG_20240131_170511.jpg',
               title: 'Electronique',
               text: "Nous concevons nos propres circuits électroniques aux fonctionnalités multiples (gestion de l'alimentation, pilotage des actionneurs et des moteurs, etc) afin de les intégrer dans notre robot",
             },
             {
-              image: 'https://r2.modelec.club/Selection%20site/IMG_2045.jpg',
+              image: '/assets/Selection site_IMG_2045.jpg',
               title: 'Programmation',
               text: 'Nous programmons nos robots en arduino, C et C++. Nous allons utiliser ROS en 2025. Nous développons des algorithmes du simple composant pour piloter des moteurs pas à pas aux algorithmes de prise de décision en passant par des correcteurs PID.',
             },
             {
-              image: 'https://r2.modelec.club/Selection%20site/IMG_2122.jpg',
+              image: '/assets/Selection site_IMG_2122.jpg',
               title: 'Manipulations',
               text: "Au sein de notre club les étudiants réalisent des soudures, ils peuvent bricoler avec l'outillage ou expérimenter avec des composants électroniques appartenants au club et mis à disposition de tous. ",
             },
             {
               image:
-                'https://r2.modelec.club/Selection%20site/PXL_20230921_121403004.TS_exported_1603_1695303828223.jpg',
+                '/assets/Selection site_PXL_20230921_121403004.TS_exported_1603_1695303828223.jpg',
               title: 'Présentations',
               text: "Nous présentons nos projets aux étudiants de l'école lors du forum des clubs ou des portes ouvertes, nous participons aussi à des salons de makers. Nous avons aussi pour objectif de proposer des visites en milieux industriels aux élèves de l'ISEN.",
             },
@@ -190,22 +190,22 @@ const Home: React.FC = () => {
                 {
                   name: 'Maxime Chauveau',
                   role: 'Président',
-                  image: 'https://r2.modelec.club/maxime.png',
+                  image: '/assets//maxime.png',
                 },
                 {
                   name: 'Vincent Rocher',
                   role: 'Vice-Président',
-                  image: 'https://r2.modelec.club/vincent.jpg',
+                  image: '/assets//vincent.jpg',
                 },
                 {
                   name: 'Felix Marquet',
                   role: 'Secrétaire',
-                  image: 'https://r2.modelec.club/felix.png',
+                  image: '/assets//felix.png',
                 },
                 {
                   name: 'Florent Butery',
                   role: 'Trésorier',
-                  image: 'https://r2.modelec.club/flo.jpg',
+                  image: '/assets//flo.jpg',
                 },
               ],
             },
@@ -215,17 +215,17 @@ const Home: React.FC = () => {
                 {
                   name: 'Cléo Sionville',
                   role: 'Communication',
-                  image: 'https://r2.modelec.club/cleo.jpg',
+                  image: '/assets//cleo.jpg',
                 },
                 {
                   name: 'Arthur Grossmann-Le Mauguen',
                   role: 'Evenementiel',
-                  image: 'https://r2.modelec.club/arthur.png',
+                  image: '/assets//arthur.png',
                 },
                 {
                   name: 'Allan Cueff',
                   role: 'Partenariat',
-                  image: 'https://r2.modelec.club/allan.png',
+                  image: '/assets//allan.png',
                 },
               ],
             },

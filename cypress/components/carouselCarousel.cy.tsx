@@ -7,13 +7,13 @@ describe('<Carousel />', () => {
     const carouselItems = [
       {
         image:
-          'https://r2.modelec.club/Selection%20site/IMG_20231027_221105.jpg',
+          '/assets/IMG_20231027_221105.jpg',
         title: 'Lorem Ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, vehicula justo.',
       },
       {
         image:
-          'https://r2.modelec.club/Selection%20site/IMG_20231116_192517.jpg',
+          '/assets/IMG_20231116_192517.jpg',
         title: 'Fusce et sem',
         text: 'Fusce et sem nec nunc luctus tincidunt. Nullam sit amet neque sed elit fermentum efficitur.',
       },

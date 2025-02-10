@@ -11,22 +11,22 @@ describe('<Team />', () => {
           {
             name: 'Maxime Chauveau',
             role: 'Président',
-            image: 'https://r2.modelec.club/maxime.png',
+            image: '/assets//maxime.png',
           },
           {
             name: 'Vincent Rocher',
             role: 'Vice-Président',
-            image: 'https://r2.modelec.club/vincent.jpg',
+            image: '/assets//vincent.jpg',
           },
           {
             name: 'Felix Marquet',
             role: 'Secrétaire',
-            image: 'https://r2.modelec.club/felix.png',
+            image: '/assets//felix.png',
           },
           {
             name: 'Florent Butery',
             role: 'Trésorier',
-            image: 'https://r2.modelec.club/flo.jpg',
+            image: '/assets//flo.jpg',
           },
         ],
       },
@@ -36,17 +36,17 @@ describe('<Team />', () => {
           {
             name: 'Cléo Sionville',
             role: 'Communication',
-            image: 'https://r2.modelec.club/cleo.jpg',
+            image: '/assets//cleo.jpg',
           },
           {
             name: 'Arthur Grossmann-Le Mauguen',
             role: 'Evenementiel',
-            image: 'https://r2.modelec.club/arthur.png',
+            image: '/assets//arthur.png',
           },
           {
             name: 'Allan Cueff',
             role: 'Partenariat',
-            image: 'https://r2.modelec.club/allan.png',
+            image: '/assets//allan.png',
           },
         ],
       },
