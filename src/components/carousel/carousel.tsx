@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavArrowLeft, NavArrowRight } from 'iconoir-react';
 import './carousel.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface CarouselProps {
   carousel: CarouselImageProps[];
@@ -78,7 +79,7 @@ export const Carousel: React.FC<CarouselProps> = ({ carousel }) => {
         <div className={'carousel-slider'} ref={carouselSlider}>
           {[...carousel, ...carousel].map((image, index) => (
             <div key={index} className={'slide'}>
-              <img
+              <LazyLoadImage
                 key={index}
                 className={`slide-image ${index === currentIndex ? 'active' : ''}`}
                 src={image.image}
