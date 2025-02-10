@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
         ]}
       />
       <Banner
-        image={{ src: "https://r2.modelec.club/isen_group_photo.png", alt: "Photo de groupe à l'ISEN" }}
+        image={{ src: "/assets//isen_group_photo.png", alt: "Photo de groupe à l'ISEN" }}
         header={'Une question ?'}
       >
         Vous avez une <b>question</b> vis-à-vis de notre <u>club</u> ou de l'un

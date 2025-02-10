@@ -45,13 +45,13 @@ const Projets: React.FC = () => {
 
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/MARCEL/front.PNG',
+                src: '/assets/MARCEL_front.PNG',
                 alt: 'Vue de face de Marcel en 3D',
                 fit: 'cover',
               },
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/MARCEL/back-line.PNG',
+                src: '/assets/MARCEL_back-line.PNG',
                 alt: 'Vue de dos de Marcel en 3D',
                 fit: 'cover',
               },
@@ -90,13 +90,13 @@ const Projets: React.FC = () => {
 
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/Bureau/IMG_3881.PNG',
+                src: '/assets/Bureau_IMG_3881.PNG',
                 alt: 'Table de jeu pour la Coupe de France de Robotique',
                 fit: 'cover',
               },
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/Bureau/IMG_3882.PNG',
+                src: '/assets/Bureau_IMG_3882.PNG',
                 alt: 'Table de jeu pour la Coupe de France de Robotique',
                 fit: 'cover',
               },
@@ -105,7 +105,7 @@ const Projets: React.FC = () => {
           {
             title: 'Serge : Notre robot',
             date: '2024',
-            banner: 'https://r2.modelec.club/serge.png',
+            banner: '/assets/serge.png',
             paragraphs: [
               <>
                 Voici Serge, notre robot pour la{' '}
@@ -143,7 +143,7 @@ const Projets: React.FC = () => {
               { type: 'stat', data: '14', label: '/82 équipes' },
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/cdf.png',
+                src: '/assets/cdf.png',
                 alt: 'Logo Coupe de France de Robotique',
                 fit: 'contain',
               },
@@ -164,7 +164,7 @@ const Projets: React.FC = () => {
             cards: [
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/PAMI-V1.png',
+                src: '/assets/PAMI-V1.png',
                 alt: 'PAMI v1',
                 fit: 'cover',
               },
@@ -185,25 +185,25 @@ const Projets: React.FC = () => {
             cards: [
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/table2024.jpg',
+                src: '/assets/table2024.jpg',
                 alt: 'Table de jeu pour la Coupe de France de Robotique',
                 fit: 'cover',
               },
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/Table/20231102_163959.jpg',
+                src: '/assets/Table_20231102_163959.jpg',
                 alt: 'Table de jeu pour la Coupe de France de Robotique',
                 fit: 'cover',
               },
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/Table/20231102_164300.jpg',
+                src: '/assets/Table_20231102_164300.jpg',
                 alt: 'Table de jeu pour la Coupe de France de Robotique',
                 fit: 'cover',
               },
               {
                 type: 'image',
-                src: 'https://r2.modelec.club/Table/IMG_20231202_160702.jpg',
+                src: '/assets/Table_IMG_20231202_160702.jpg',
                 alt: 'Table de jeu pour la Coupe de France de Robotique',
                 fit: 'cover',
               },

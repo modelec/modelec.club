@@ -70,12 +70,12 @@ export const Navbar = () => {
         <Link to={'/'} className={'navbar-logo'}>
           <LazyLoadImage
             className={'navbar-logo-img img_large'}
-            src={'https://r2.modelec.club/logo-full.png'} // TODO: Change to SVG logo / import it from assets
+            src={'/assets//logo-full.png'} // TODO: Change to SVG logo / import it from assets
             alt={'Modelec Logo'}
           />
           <LazyLoadImage
             className={'navbar-logo-img img_small'}
-            src={'https://r2.modelec.club/logo.png'} // TODO: Change to SVG logo / import it from assets
+            src={'/assets//logo.png'} // TODO: Change to SVG logo / import it from assets
             alt={'Modelec Logo'}
           />
         </Link>

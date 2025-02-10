@@ -7,7 +7,7 @@ describe('<Box />', () => {
     const elements = [
       {
         type: 'image',
-        src: 'https://r2.modelec.club/serge-pixel.png',
+        src: '/assets//serge-pixel.png',
         alt: 'Serge Pixel',
       },
       { type: 'data', data: '14e', subtext: '/82 équipes' },

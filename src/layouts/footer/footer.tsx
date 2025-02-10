@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
       <div className={'footer-content'}>
         <LazyLoadImage
           className={'footer-logo'}
-          src={'https://r2.modelec.club/logo.png'}
+          src={'/assets/logo.png'}
           alt={'Modelec'}
         />
         <div className={'footer-part'}>

@@ -6,7 +6,7 @@ import { Banner } from '../../src/components/banner/banner';
 describe('<Banner />', () => {
   it('renders the first Banner component correctly', () => {
     const image = {
-      src: 'https://r2.modelec.club/coupe-2024.png',
+      src: '/assets//coupe-2024.png',
       alt: 'Modelec Photo',
     };
     const header = 'Qui sommes-nous ?';
@@ -28,7 +28,7 @@ describe('<Banner />', () => {
 
   it('renders the second Banner component correctly', () => {
     const image = {
-      src: 'https://r2.modelec.club/isen_group_photo.png',
+      src: '/assets//isen_group_photo.png',
       alt: "Photo de groupe à l'ISEN",
     };
     const header = 'Une question ?';

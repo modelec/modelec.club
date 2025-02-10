@@ -7,7 +7,7 @@ describe('<Partner />', () => {
     cy.mount(
       <Partner
         name={'ISEN Nantes'}
-        logo={'https://r2.modelec.club/isen.png'}
+        logo={'/assets//isen.png'}
         texts={[
           <>
             L'ISEN Nantes est une école d'ingénieurs généraliste en 5 ans. Elle
@@ -16,7 +16,7 @@ describe('<Partner />', () => {
             disposition un local pour travailler sur nos projets.
           </>,
         ]}
-        photos={['https://r2.modelec.club/ISEN-2.jpg']}
+        photos={['/assets//ISEN-2.jpg']}
         link={'https://isen-nantes.fr'}
       />
     );
@@ -26,7 +26,7 @@ describe('<Partner />', () => {
     cy.get('.partner-logo').should(
       'have.attr',
       'src',
-      'https://r2.modelec.club/isen.png'
+      '/assets//isen.png'
     );
     cy.get('.partner-text').should(
       'contain.text',
@@ -35,7 +35,7 @@ describe('<Partner />', () => {
     cy.get('.partner-photos img').should(
       'have.attr',
       'src',
-      'https://r2.modelec.club/ISEN-2.jpg'
+      '/assets//ISEN-2.jpg'
     );
     cy.get('.partner-link').should(
       'have.attr',
@@ -48,7 +48,7 @@ describe('<Partner />', () => {
     cy.mount(
       <Partner
         name={'MercuryCloud'}
-        logo={'https://r2.modelec.club/mercurycloud.png'}
+        logo={'/assets//mercurycloud.png'}
         texts={[
           <>
             MercuryCloud est un hébergeur web, de vps ainsi que de serveur de
@@ -56,7 +56,7 @@ describe('<Partner />', () => {
             pour héberger certains service dont ce site web.
           </>,
         ]}
-        photos={['https://r2.modelec.club/MercuryCloud.jpg']}
+        photos={['/assets//MercuryCloud.jpg']}
         link={'https://mercurycloud.fr/aff.php?aff=14'}
       />
     );
@@ -66,7 +66,7 @@ describe('<Partner />', () => {
     cy.get('.partner-logo').should(
       'have.attr',
       'src',
-      'https://r2.modelec.club/mercurycloud.png'
+      '/assets//mercurycloud.png'
     );
     cy.get('.partner-text').should(
       'contain.text',
@@ -75,7 +75,7 @@ describe('<Partner />', () => {
     cy.get('.partner-photos img').should(
       'have.attr',
       'src',
-      'https://r2.modelec.club/MercuryCloud.jpg'
+      '/assets//MercuryCloud.jpg'
     );
     cy.get('.partner-link').should(
       'have.attr',
@@ -88,7 +88,7 @@ describe('<Partner />', () => {
     cy.mount(
       <Partner
         name={'Odyssey BDE'}
-        logo={'https://r2.modelec.club/bde.png'}
+        logo={'/assets//bde.png'}
         texts={[
           <>
             Le BDE de l'ISEN Nantes, Odyssey, est un partenaire de longue date.
@@ -96,7 +96,7 @@ describe('<Partner />', () => {
             soutiennent dans nos projets.
           </>,
         ]}
-        photos={['https://r2.modelec.club/Odyseey.JPEG']}
+        photos={['/assets//Odyseey.JPEG']}
         link={'https://instagram.com/odyssey_bde'}
       />
     );
@@ -106,7 +106,7 @@ describe('<Partner />', () => {
     cy.get('.partner-logo').should(
       'have.attr',
       'src',
-      'https://r2.modelec.club/bde.png'
+      '/assets//bde.png'
     );
     cy.get('.partner-text').should(
       'contain.text',
@@ -115,7 +115,7 @@ describe('<Partner />', () => {
     cy.get('.partner-photos img').should(
       'have.attr',
       'src',
-      'https://r2.modelec.club/Odyseey.JPEG'
+      '/assets//Odyseey.JPEG'
     );
     cy.get('.partner-link').should(
       'have.attr',
