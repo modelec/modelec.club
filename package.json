@@ -31,7 +31,7 @@
     "cypress": "^13.16.1",
     "eslint-plugin-react": "^7.37.4",
     "iconoir-react": "^7.10.1",
-    "react": "^18.3.1",
+    "react": "^19.0.0",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-lazy-load-image-component": "^1.6.3",
@@ -40,7 +40,7 @@
   "devDependencies": {
     "@eslint/js": "^9.16.0",
     "@simonsmith/cypress-image-snapshot": "^9.1.0",
-    "@types/react": "^18.3.12",
+    "@types/react": "^19.0.8",
     "@types/react-dom": "^18.3.1",
     "@types/react-lazy-load-image-component": "^1.6.4",
     "@vitejs/plugin-react": "^4.3.4",
