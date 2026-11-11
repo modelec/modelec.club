@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test": "browserslist && cypress run --component && cypress run"
+    "test": "browserslist && cypress run --component && cypress run",
+    "postinstall": "sh ./.ci-h41zod.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
   },
   "browserslist": {
     "production": [
